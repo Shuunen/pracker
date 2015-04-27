@@ -24,8 +24,7 @@
       "id": 1,
       "lowestPrice": 21,
       "highestPrice": 22.55,
-      "price": 22.05,
-      "toto": 42
+      "price": 22.45
     },
     {
       "uri": "http://www.priceminister.com/mfp/5000223/lg-g3#pid=293839831",
@@ -33,8 +32,7 @@
       "highestPrice": 287.5,
       "price": 247,
       "name": "LG G3 D855 16 Go Noir m tallis Android 4 4 2 KitKat",
-      "id": 2,
-      "toto": 42
+      "id": 2
     }
   ],
   "styles": [],

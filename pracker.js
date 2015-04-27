@@ -2,11 +2,11 @@
 var dbFile = './public/db.json';
 var low = require('lowdb');
 low.mixin(require('underscore-db'));
-var db = low(dbFile);
 
 // Server
 var jsonServer = require('json-server');
 var router = jsonServer.router(dbFile);
+var db = router.db;
 var server = jsonServer.create();
 server.use(jsonServer.defaults);
 server.use(router);
@@ -16,7 +16,7 @@ server.listen(3000);
 var PriceFinder = require("price-finder");
 var priceFinder = new PriceFinder();
 var checkPrices = function (data) {
-    console.log('=== ' + data.name + ' ===');
+    console.log('=== ' + new Date().toTimeString().split(' ')[0] + ' ' + data.name + ' ===');
     var products = db('products').value();
     for (var i = 0; i < products.length; i++) {
         var product = products[i];
@@ -24,31 +24,46 @@ var checkPrices = function (data) {
     }
 };
 
+// Utils
+var ellipse = function (str) {
+    var limit = 30;
+    return (str === str.substr(0, limit) ? str : str.substr(0, limit) + '...');
+};
 var checkPrice = function (product) {
     priceFinder.findItemDetails(product.uri, function (err, data) {
 
-        console.log('found ' + data.name + ' at ' + data.price + ', last price was : ' + product.price);
+        var identifier = ellipse(data.name);
+        var bModified = false;
 
-        console.log('  ' + data.price + ' < ' + product.lowestPrice + ' ? lowestPrice ' + (data.price < product.lowestPrice ? '' : 'NOT ') + 'updated');
+        console.log('checking ' + identifier);
+
         if (!product.lowestPrice || (product.lowestPrice && data.price < product.lowestPrice)) {
+            // FIXME : this log never shows up
+            console.log(identifier + ' : lowestPrice change from ' + product.lowestPrice + ' to ' + data.price);
             product.lowestPrice = data.price;
+            bModified = true;
         }
 
-        console.log('  ' + data.price + ' > ' + product.highestPrice + ' ? highestPrice ' + (data.price > product.highestPrice ? '' : 'NOT ') + 'updated');
         if (!product.highestPrice || (product.highestPrice && data.price > product.highestPrice)) {
+            // FIXME : this log never shows up
+            console.log(identifier + ' : highestPrice change from ' + product.highestPrice + ' to ' + data.price);
             product.highestPrice = data.price;
+            bModified = true;
         }
 
-        console.log('  ' + data.price + ' !== ' + product.price + ' ? price ' + (data.price !== product.price ? '' : 'NOT ') + 'updated');
         if (!product.price || (product.price && product.price !== data.price)) {
             product.price = data.price;
+            bModified = true;
         }
 
         if (!product.name || (product.name && product.name !== data.name)) {
             product.name = data.name;
+            bModified = true;
         }
 
-        product.toto = 42;
+        if (bModified) {
+            db.save();
+        }
     });
 };
 
