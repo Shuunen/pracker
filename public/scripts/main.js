@@ -2,8 +2,8 @@ function initDatatable() {
 
     $('#table').dataTable({
         "ajax": {
-            "url": 'products',
-            "dataSrc": ''
+            "url": 'db.json',
+            "dataSrc": 'products'
         },
         "columns": [
             {
@@ -30,7 +30,7 @@ function initDatatable() {
                 "targets": 0
             },
             {
-                "render": function (data, type, row) {
+                "render": function (data) {
                     return formatMoney(data);
                 },
                 "targets": [1, 2, 3]
@@ -41,15 +41,15 @@ function initDatatable() {
 }
 
 function formatMoney(number, currency, decPlaces, thouSeparator, decSeparator) {
-    var currency = currency === undefined ? '&euro;' : currency,
-        decPlaces = isNaN(decPlaces = Math.abs(decPlaces)) ? 2 : decPlaces,
-        decSeparator = decSeparator == undefined ? "," : decSeparator,
-        thouSeparator = thouSeparator == undefined ? " " : thouSeparator,
-        sign = number < 0 ? "-" : "",
+    currency = currency === undefined ? '&euro;' : currency;
+    decPlaces = isNaN(decPlaces = Math.abs(decPlaces)) ? 2 : decPlaces;
+    decSeparator = decSeparator == undefined ? "," : decSeparator;
+    thouSeparator = thouSeparator == undefined ? " " : thouSeparator;
+    var sign = number < 0 ? "-" : "",
         i = parseInt(n = Math.abs(+number || 0).toFixed(decPlaces)) + "",
         j = (j = i.length) > 3 ? j % 3 : 0;
     return sign + (j ? i.substr(0, j) + thouSeparator : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + thouSeparator) + (decPlaces ? decSeparator + Math.abs(number - i).toFixed(decPlaces).slice(2) : "") + ' ' + currency;
-};
+}
 
 function handleForm() {
 

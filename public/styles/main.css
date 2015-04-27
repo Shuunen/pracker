@@ -1,9 +1,6 @@
 @font-face {
   font-family: headerFont;
   src: url("../fonts/LeagueGothic-Regular.otf"); }
-@font-face {
-  font-family: contentFont;
-  src: url("../fonts/Judson-Regular.ttf"); }
 html {
   height: 100%; }
 
@@ -26,6 +23,7 @@ body {
 @-webkit-keyframes masked-animation {
   0% {
     background-position: left top; }
+
   100% {
     background-position: right top; } }
 /* Custom page header */
@@ -71,5 +69,3 @@ body {
 
 .no-padding {
   padding: 0; }
-
-/*# sourceMappingURL=main.css.map */
