@@ -1,0 +1,19 @@
+{
+  "name": "pracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.7.1",
+    "lowdb": "^0.7.3",
+    "pomelo-schedule": "^0.3.7",
+    "price-finder": "^1.2.1",
+    "underscore": "^1.8.3",
+    "underscore-db": "^0.8.1"
+  }
+}
