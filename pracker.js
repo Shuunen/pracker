@@ -66,18 +66,25 @@ var ellipse = function (str) {
 var checkPrice = function (product) {
     priceFinder.findItemDetails(product.uri, function (err, data) {
 
+        if(!data.name){
+            return;
+        }
+
         var identifier = ellipse(data.name);
         var bModified = false;
 
         if (!product.lowestPrice || (product.lowestPrice && data.price < product.lowestPrice)) {
-            // TODO : check this log never shows up
-            log('price drop from ' + product.lowestPrice + ' to ' + data.price, identifier);
+            if (product.lowestPrice) {
+                log('price drop from ' + product.lowestPrice + ' to ' + data.price, identifier);
+            }
             product.lowestPrice = data.price;
             bModified = true;
         }
 
         if (!product.highestPrice || (product.highestPrice && data.price > product.highestPrice)) {
-            log('price jump from ' + product.highestPrice + ' to ' + data.price, identifier);
+            if(product.highestPrice) {
+                log('price jump from ' + product.highestPrice + ' to ' + data.price, identifier);
+            }
             product.highestPrice = data.price;
             bModified = true;
         }

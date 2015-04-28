@@ -20,7 +20,7 @@
     "nma": "^0.2.2",
     "node-notifier": "^4.2.1",
     "pomelo-schedule": "^0.3.7",
-    "price-finder": "^1.2.1",
+    "price-finder": "Shuunen/price-finder",
     "underscore": "^1.8.3",
     "underscore-db": "^0.8.1"
   }

@@ -60,6 +60,18 @@ function handleForm() {
         event.preventDefault();
         if (addInput.value.length) {
             console.log('add product : ' + addInput.value);
+            var newProduct = {
+                "uri": addInput.value
+            };
+            $.post("products", newProduct)
+                .done(function (data) {
+                    addInput.value = '';
+                    var line = $('<p>Product added :)</p>');
+                    $(form).append(line);
+                    setTimeout(function () {
+                        line.remove();
+                    }, 1500);
+                });
         }
     });
 

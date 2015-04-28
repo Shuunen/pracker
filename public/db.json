@@ -19,20 +19,100 @@
   ],
   "products": [
     {
-      "name": "Grand Theft Auto V sur PS3",
+      "name": "GTA 5",
       "uri": "http://www.priceminister.com/mfp/2001702/gta-5-jeu-video#pid=180624024",
       "id": 1,
       "lowestPrice": 21.05,
       "highestPrice": 22.55,
-      "price": 21.05
+      "price": 21.95
     },
     {
       "uri": "http://www.priceminister.com/mfp/5000223/lg-g3#pid=293839831",
       "lowestPrice": 247,
       "highestPrice": 317.5,
       "price": 317.4,
-      "name": "LG G3 D855 16 Go Noir m tallis Android 4 4 2 KitKat",
+      "name": "LG Electronics",
       "id": 2
+    },
+    {
+      "uri": "http://www.priceminister.com/mfp/2002259/lego-batman-jeu-video#pid=71106674&scroll=reviews",
+      "id": 3,
+      "lowestPrice": 10.05,
+      "highestPrice": 10.05,
+      "price": 10.05,
+      "name": "Lego Batman sur PS3"
+    },
+    {
+      "uri": "http://www.priceminister.com/mfp/2002279/lego-star-wars-la-saga-complete-jeu-video#pid=59531974",
+      "id": 4,
+      "lowestPrice": 21.73,
+      "highestPrice": 21.73,
+      "price": 21.73,
+      "name": "Lego Star Wars The Complete Saga Ensemble complet PlayStation 3 sur PS3"
+    },
+    {
+      "uri": "http://www.priceminister.com/mfp/2002278/lego-star-wars-3-the-clone-wars-jeu-video#pid=115239023",
+      "id": 5,
+      "lowestPrice": 16.21,
+      "highestPrice": 16.21,
+      "price": 16.21,
+      "name": "LSW3"
+    },
+    {
+      "uri": "http://www.priceminister.com/mfp/2002264/lego-harry-potter-annees-1-a-4-jeu-video#pid=90811205",
+      "id": 6,
+      "lowestPrice": 21.49,
+      "highestPrice": 22.03,
+      "price": 21.49,
+      "name": "Lego Harry Potter - Years 1-4"
+    },
+    {
+      "uri": "http://www.priceminister.com/mfp/2002267/lego-indiana-jones-la-trilogie-originale-jeu-video#pid=66436486",
+      "id": 7,
+      "lowestPrice": 26.05,
+      "highestPrice": 26.05,
+      "price": 26.05,
+      "name": "Lego Indiana Jones La Trilogie Originale Ensemble complet PlayStation 3 fran ais sur PS3"
+    },
+    {
+      "uri": "http://www.priceminister.com/mfp/2002265/lego-harry-potter-annees-5-a-7-jeu-video#pid=132123430",
+      "id": 8,
+      "lowestPrice": 16.3,
+      "highestPrice": 16.3,
+      "price": 16.3,
+      "name": "Lego Harry Potter - Years 5-7"
+    },
+    {
+      "uri": "http://www.priceminister.com/mfp/2002262/lego-le-seigneur-des-anneaux-jeu-video#pid=174969055",
+      "id": 9,
+      "lowestPrice": 15.05,
+      "highestPrice": 15.05,
+      "price": 15.05,
+      "name": "Lego - Lord of the Ring"
+    },
+    {
+      "uri": "http://www.priceminister.com/mfp/5026173/lego-the-hobbit#pid=273754559",
+      "id": 10,
+      "lowestPrice": 20.48,
+      "highestPrice": 20.48,
+      "price": 20.48,
+      "name": "Lego - Le Hobbit"
+    },
+    {
+      "uri": "http://www.priceminister.com/mfp/5026169/lego-la-grande-aventure-le-jeu-video#pid=267572129",
+      "id": 11,
+      "lowestPrice": 18.95,
+      "highestPrice": 18.95,
+      "price": 18.95,
+      "name": "The Lego Movie Videogame"
+    },
+    {
+      "uri": "http://www.priceminister.com/mfp/2002271/lego-pirates-des-caraibes-jeu-video#pid=118306050",
+      "id": 12,
+      "lowestPrice": 15.55,
+      "highestPrice": 15.55,
+      "price": 15.55,
+      "name": "Lego Pirates of The Caribbean - The Video Game"
     }
   ],
   "styles": [],
