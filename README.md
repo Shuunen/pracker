@@ -15,6 +15,7 @@ node pracker
 
 Thanks to all this great projects :
 
+* [price-finder](https://github.com/dylants/price-finder) for getting price around the web with a simple url
 * [lowdb](https://github.com/typicode/lowdb) for a simple and local db.json management
 * [json-server](https://github.com/typicode/json-server) for deploying the API automagically
 * [datatables](https://github.com/DataTables/DataTables) for displaying and managing table display like a boss
