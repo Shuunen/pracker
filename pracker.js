@@ -12,11 +12,30 @@ server.use(jsonServer.defaults);
 server.use(router);
 server.listen(3000);
 
+// Desktop notification
+var notifier = require('node-notifier');
+var notifierOptions = {
+    /*title: "A title",
+    message: "A message"*/
+};
+
+// Mobile notification
+var nma = require("nma");
+var nmaOptions = {
+    "apikey": "YOUR_API_KEY",
+    "application": "Pracker",/*
+    "event": "An Event",
+    "description": "And a description of that event...",
+    "priority": 0, // Priority
+    "url": "http://www.somewebsite.com/",*/
+    "content-type": "text/plain"
+};
+
 // Job
 var PriceFinder = require("price-finder");
 var priceFinder = new PriceFinder();
 var checkPrices = function (data) {
-    console.log('=== ' + new Date().toTimeString().split(' ')[0] + ' ' + data.name + ' ===');
+    log('job ' + data.name + ' started');
     var products = db('products').value();
     for (var i = 0; i < products.length; i++) {
         var product = products[i];
@@ -25,6 +44,21 @@ var checkPrices = function (data) {
 };
 
 // Utils
+var log = function (message, title) {
+    var str = message;
+    if (title) {
+        // desktop notification
+        notifierOptions.title = title;
+        notifierOptions.message = message;
+        notifier.notify(notifierOptions);
+        str = title + ' : ' + message;
+        // mobile notification
+        nmaOptions.event = title;
+        nmaOptions.description = message;
+        nma(nmaOptions);
+    }
+    console.log('=== ' + new Date().toTimeString().split(' ')[0] + ' ' + str + ' ===');
+};
 var ellipse = function (str) {
     var limit = 30;
     return (str === str.substr(0, limit) ? str : str.substr(0, limit) + '...');
@@ -35,18 +69,15 @@ var checkPrice = function (product) {
         var identifier = ellipse(data.name);
         var bModified = false;
 
-        console.log('checking ' + identifier);
-
         if (!product.lowestPrice || (product.lowestPrice && data.price < product.lowestPrice)) {
-            // FIXME : this log never shows up
-            console.log(identifier + ' : lowestPrice change from ' + product.lowestPrice + ' to ' + data.price);
+            // TODO : check this log never shows up
+            log('price drop from ' + product.lowestPrice + ' to ' + data.price, identifier);
             product.lowestPrice = data.price;
             bModified = true;
         }
 
         if (!product.highestPrice || (product.highestPrice && data.price > product.highestPrice)) {
-            // FIXME : this log never shows up
-            console.log(identifier + ' : highestPrice change from ' + product.highestPrice + ' to ' + data.price);
+            log('price jump from ' + product.highestPrice + ' to ' + data.price, identifier);
             product.highestPrice = data.price;
             bModified = true;
         }

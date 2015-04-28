@@ -1,16 +1,24 @@
 {
   "name": "pracker",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "An interval based price checking tool",
+  "main": "pracker.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "Romain Racamier"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shuunen/pracker.git"
+  },
+  "license": "MIT",
   "dependencies": {
     "json-server": "^0.7.1",
     "lowdb": "^0.7.3",
+    "nma": "^0.2.2",
+    "node-notifier": "^4.2.1",
     "pomelo-schedule": "^0.3.7",
     "price-finder": "^1.2.1",
     "underscore": "^1.8.3",
