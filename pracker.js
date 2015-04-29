@@ -66,7 +66,8 @@ var ellipse = function (str) {
 var checkPrice = function (product) {
     priceFinder.findItemDetails(product.uri, function (err, data) {
 
-        if(!data.name){
+        if(!data || !data.name){
+            log('data error on product uri : ' + product.uri);
             return;
         }
 
@@ -107,7 +108,7 @@ var checkPrice = function (product) {
 
 // Scheduler
 var schedule = require('./node_modules/pomelo-schedule/lib/schedule');
-var minutes = 15;
+var minutes = 30;
 var seconds = minutes * 60;
 var milliseconds = seconds * 1000;
 schedule.scheduleJob({

@@ -1,10 +1,28 @@
 function initDatatable() {
 
+    jQuery.extend(jQuery.fn.dataTableExt.oSort, {
+        "currency-pre": function (a) {
+            a = (a === "-") ? 0 : a.replace(/[^\d\-\.]/g, "");
+            var pre = parseFloat(a);
+            // console.log(pre);
+            return pre;
+        },
+
+        "currency-asc": function (a, b) {
+            return a - b;
+        },
+
+        "currency-desc": function (a, b) {
+            return b - a;
+        }
+    });
+
     $('#table').dataTable({
         "ajax": {
             "url": 'db.json',
             "dataSrc": 'products'
         },
+        "order": [[1, "asc"]],
         "columns": [
             {
                 "data": "name"
@@ -30,6 +48,7 @@ function initDatatable() {
                 "targets": 0
             },
             {
+                "type": 'currency',
                 "render": function (data) {
                     return formatMoney(data);
                 },
