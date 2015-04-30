@@ -74,6 +74,12 @@ var checkPrice = function (product) {
         var identifier = ellipse(data.name);
         var bModified = false;
 
+        // type cast security
+        product.price = parseFloat(parseFloat(product.price).toFixed(2));
+        product.lowestPrice = parseFloat(parseFloat(product.lowestPrice).toFixed(2));
+        product.highestPrice = parseFloat(parseFloat(product.highestPrice).toFixed(2));
+        data.price = parseFloat(parseFloat(data.price).toFixed(2));
+
         if (!product.lowestPrice || (product.lowestPrice && data.price < product.lowestPrice)) {
             if (product.lowestPrice) {
                 log('price drop from ' + product.lowestPrice + ' to ' + data.price, identifier);
@@ -114,3 +120,16 @@ var milliseconds = seconds * 1000;
 schedule.scheduleJob({
     period: milliseconds
 }, checkPrices, {name: 'checkPrices'});
+
+
+/* Snippet to batch add in browser :
+ javascript:
+ var r = new XMLHttpRequest();
+ r.open("POST", "http://localhost:3000/products", true);
+ r.onreadystatechange = function () {
+ if (r.readyState != 4 || r.status != 200) return;
+ console.info("Success: " + r.responseText);
+ };
+ r.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+ r.send("uri="+encodeURIComponent(document.location.href));
+ */

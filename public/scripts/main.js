@@ -3,17 +3,11 @@ function initDatatable() {
     jQuery.extend(jQuery.fn.dataTableExt.oSort, {
         "currency-pre": function (a) {
             a = (a === "-") ? 0 : a.replace(/[^\d\-\.]/g, "");
-            var pre = parseFloat(a);
-            // console.log(pre);
-            return pre;
+            return parseFloat(a);
         },
-
-        "currency-asc": function (a, b) {
-            return a - b;
-        },
-
-        "currency-desc": function (a, b) {
-            return b - a;
+        "discount-pre": function (a) {
+            a = a.split('%')[0];
+            return parseFloat(a);
         }
     });
 
@@ -22,7 +16,7 @@ function initDatatable() {
             "url": 'db.json',
             "dataSrc": 'products'
         },
-        "order": [[1, "asc"]],
+        "order": [[2, "desc"]],
         "columns": [
             {
                 "data": "name"
@@ -31,28 +25,40 @@ function initDatatable() {
                 "data": "price"
             },
             {
-                "data": "lowestPrice"
-            },
-            {
-                "data": "highestPrice"
-            },
-            {
-                "data": "id"
+                "data": "price" // fake placeholder for discount display
             }
         ],
         "columnDefs": [
             {
                 "render": function (data, type, row) {
-                    return '<a href="' + row['uri'] + '">' + row['name'] + '</a>';
+                    return '<a href="' + row['uri'] + '" title="id : ' + row['id'] + '">' + row['name'] + '</a>';
                 },
                 "targets": 0
             },
             {
                 "type": 'currency',
-                "render": function (data) {
-                    return formatMoney(data);
+                "render": function (data, type, row) {
+                    return '<span title="from ' + formatMoney(row['lowestPrice']) + ' to ' + formatMoney(row['highestPrice']) + '">' + formatMoney(row['price']) + '</span>';
                 },
-                "targets": [1, 2, 3]
+                "targets": 1
+            },
+            {
+                "type": 'discount',
+                "render": function (data, type, row) {
+
+                    // type cast security
+                    price = parseFloat(parseFloat(row['price']).toFixed(2));
+                    lowestPrice = parseFloat(parseFloat(row['lowestPrice']).toFixed(2));
+                    highestPrice = parseFloat(parseFloat(row['highestPrice']).toFixed(2));
+
+                    var average = (lowestPrice + highestPrice) / 2;
+                    var discount = (1 - (price / average)) * 100;
+                    discount = (isNaN(discount) ? 0 : discount.toFixed(0)) + '%';
+                    var difference = Math.round(average - price);
+                    difference = difference ? ' - ' + difference + '€' : '';
+                    return discount + difference;
+                },
+                "targets": 2
             }
         ]
     });

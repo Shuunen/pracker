@@ -5,10 +5,9 @@
     <meta name="description">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <title>Pracker</title>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <link rel="stylesheet"
-          href="http://cdn.datatables.net/plug-ins/1.10.6/integration/bootstrap/3/dataTables.bootstrap.css">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bower_components/datatables-bootstrap3/BS3/assets/css/datatables.css">
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
 
@@ -28,9 +27,7 @@
             <tr>
                 <th>Name</th>
                 <th>Price</th>
-                <th>Lowest Price</th>
-                <th>Highest Price</th>
-                <th>Id</th>
+                <th>Discount</th>
             </tr>
             </thead>
         </table>
@@ -40,13 +37,13 @@
 
     <form class="form-horizontal">
         <div class="form-group">
-            <div class="col-sm-2 no-padding">
+            <div class="col-sm-2 col-xs-3 no-padding">
                 <label for="add" class="control-label">Add a product</label>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 col-xs-6">
                 <input type="text" class="form-control" id="add" placeholder="http://www.priceminister.com/...">
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-2 col-xs-3">
                 <button type="submit" class="btn btn-default">Add</button>
             </div>
         </div>
@@ -62,10 +59,11 @@
 
 </div>
 
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="http://cdn.datatables.net/1.10.6/js/jquery.dataTables.min.js"></script>
-<script src="http://cdn.datatables.net/plug-ins/1.10.6/integration/bootstrap/3/dataTables.bootstrap.js"></script>
-<script src="scripts/main.js"></script>
+<script src="./bower_components/datatables/media/js/jquery.js"></script>
+<script src="./bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+<script src="./bower_components/datatables-bootstrap3/BS3/assets/js/datatables.js"></script>
+<script src="./scripts/main.js"></script>
+
 </body>
 
 </html>
