@@ -12,24 +12,17 @@ server.use(jsonServer.defaults);
 server.use(router);
 server.listen(3000);
 
-// Desktop notification
-var notifier = require('node-notifier');
+// Notifications
+var Growl = require('node-notifier').Growl;
+var notifier = new Growl({
+    name: 'Pracker',
+    host: 'localhost',
+    port: 23053
+});
 var notifierOptions = {
-    /*title: "A title",
-    message: "A message"*/
+    wait: false
 };
 
-// Mobile notification
-var nma = require("nma");
-var nmaOptions = {
-    "apikey": "YOUR_API_KEY",
-    "application": "Pracker",/*
-    "event": "An Event",
-    "description": "And a description of that event...",
-    "priority": 0, // Priority
-    "url": "http://www.somewebsite.com/",*/
-    "content-type": "text/plain"
-};
 
 // Job
 var PriceFinder = require("price-finder");
@@ -43,19 +36,25 @@ var checkPrices = function (data) {
     }
 };
 
+// Test job
+var notifyJob = function(data){
+    log('job ' + data.name + ' started');
+    // send notification
+    notifierOptions.title = 'Today date';
+    notifierOptions.message = 'is : ' + new Date().toTimeString().split(' ')[0];
+    notifier.notify(notifierOptions);
+};
+
 // Utils
 var log = function (message, title) {
     var str = message;
     if (title) {
-        // desktop notification
+        // add title to the log
+        str = title + ' : ' + message;
+        // send notification
         notifierOptions.title = title;
         notifierOptions.message = message;
         notifier.notify(notifierOptions);
-        str = title + ' : ' + message;
-        // mobile notification
-        nmaOptions.event = title;
-        nmaOptions.description = message;
-        nma(nmaOptions);
     }
     console.log('=== ' + new Date().toTimeString().split(' ')[0] + ' ' + str + ' ===');
 };
@@ -114,13 +113,14 @@ var checkPrice = function (product) {
 
 // Scheduler
 var schedule = require('./node_modules/pomelo-schedule/lib/schedule');
-var minutes = 30;
-var seconds = minutes * 60;
-var milliseconds = seconds * 1000;
+
 schedule.scheduleJob({
-    period: milliseconds
+    period: 30 * 60 * 1000 // 30 minutes
 }, checkPrices, {name: 'checkPrices'});
 
+ schedule.scheduleJob({
+ period: 10 * 1000 // 10 seconds
+ }, notifyJob, {name: 'notifyJob'});
 
 /* Snippet to batch add in browser :
  javascript:

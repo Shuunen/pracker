@@ -2,10 +2,12 @@ function initDatatable() {
 
     jQuery.extend(jQuery.fn.dataTableExt.oSort, {
         "currency-pre": function (a) {
-            a = (a === "-") ? 0 : a.replace(/[^\d\-\.]/g, "");
+            a = $(a).text();
+            a = a.split('%')[0];
             return parseFloat(a);
         },
         "discount-pre": function (a) {
+            a = $(a).text();
             a = a.split('%')[0];
             return parseFloat(a);
         }
@@ -38,7 +40,7 @@ function initDatatable() {
             {
                 "type": 'currency',
                 "render": function (data, type, row) {
-                    return '<span title="from ' + formatMoney(row['lowestPrice']) + ' to ' + formatMoney(row['highestPrice']) + '">' + formatMoney(row['price']) + '</span>';
+                    return '<span class="col-sm-12 text-right" title="from ' + formatMoney(row['lowestPrice']) + ' to ' + formatMoney(row['highestPrice']) + '">' + formatMoney(row['price']) + '</span>';
                 },
                 "targets": 1
             },
@@ -56,7 +58,8 @@ function initDatatable() {
                     discount = (isNaN(discount) ? 0 : discount.toFixed(0)) + '%';
                     var difference = Math.round(average - price);
                     difference = difference ? ' - ' + difference + '€' : '';
-                    return discount + difference;
+                    var str = discount + difference;
+                    return '<span class="col-sm-12 text-right">' + str + '</span>';
                 },
                 "targets": 2
             }
@@ -89,7 +92,7 @@ function handleForm() {
                 "uri": addInput.value
             };
             $.post("products", newProduct)
-                .done(function (data) {
+                .done(function () {
                     addInput.value = '';
                     var line = $('<p>Product added :)</p>');
                     $(form).append(line);

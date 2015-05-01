@@ -6,13 +6,13 @@
       "id": 1,
       "lowestPrice": 16.05,
       "highestPrice": 22.55,
-      "price": 22
+      "price": 22.04
     },
     {
       "uri": "http://www.priceminister.com/mfp/5000223/lg-g3#pid=293839831",
       "lowestPrice": 247,
       "highestPrice": 317.5,
-      "price": 277.5,
+      "price": 272.5,
       "name": "Lg g3",
       "id": 2
     },
@@ -43,9 +43,9 @@
     {
       "uri": "http://www.priceminister.com/mfp/2002264/lego-harry-potter-annees-1-a-4-jeu-video#pid=90811205",
       "id": 6,
-      "lowestPrice": 21.49,
+      "lowestPrice": 18.73,
       "highestPrice": 22.03,
-      "price": 22.03,
+      "price": 18.73,
       "name": "Lego harry potter annees 1 a 4 jeu video"
     },
     {
@@ -59,9 +59,9 @@
     {
       "uri": "http://www.priceminister.com/mfp/2002265/lego-harry-potter-annees-5-a-7-jeu-video#pid=132123430",
       "id": 8,
-      "lowestPrice": 16.14,
+      "lowestPrice": 16,
       "highestPrice": 16.3,
-      "price": 16.14,
+      "price": 16,
       "name": "Lego harry potter annees 5 a 7 jeu video"
     },
     {
@@ -147,9 +147,9 @@
     {
       "uri": "http://www.priceminister.com/mfp/2003443/rayman-legends-jeu-video#pid=417846217",
       "id": 19,
-      "lowestPrice": 21.94,
+      "lowestPrice": 21.86,
       "highestPrice": 22.41,
-      "price": 21.94,
+      "price": 21.86,
       "name": "Rayman legends jeu video"
     },
     {
@@ -229,7 +229,7 @@
       "id": 29,
       "lowestPrice": 28.05,
       "highestPrice": 31.45,
-      "price": 31.45,
+      "price": 30.05,
       "name": "Littlebigplanet 3"
     },
     {
@@ -301,7 +301,7 @@
       "id": 38,
       "lowestPrice": 5.73,
       "highestPrice": 6.04,
-      "price": 5.73,
+      "price": 6.04,
       "name": "God of war 3 jeu video"
     },
     {
@@ -315,9 +315,9 @@
     {
       "uri": "http://www.priceminister.com/mfp/2004331/tekken-tag-tournament-2-jeu-video#pid=160284572",
       "id": 40,
-      "lowestPrice": 14.3,
+      "lowestPrice": 13.04,
       "highestPrice": 14.3,
-      "price": 14.3,
+      "price": 13.04,
       "name": "Tekken tag tournament 2 jeu video"
     },
     {
@@ -331,9 +331,9 @@
     {
       "uri": "http://www.priceminister.com/offer/buy/116078703/tekken-6-edition-plainum-jeu-ps3.html",
       "id": 42,
-      "lowestPrice": 20.85,
+      "lowestPrice": 17.94,
       "highestPrice": 20.85,
-      "price": 20.85,
+      "price": 17.94,
       "name": "Tekken 6 edition plainum jeu ps3"
     },
     {
@@ -355,9 +355,9 @@
     {
       "uri": "http://www.priceminister.com/offer/buy/171440290/ni-no-kuni-la-vengeance-de-la-sorciere-celeste.html",
       "id": 45,
-      "lowestPrice": 19.95,
+      "lowestPrice": 18.95,
       "highestPrice": 21.05,
-      "price": 19.95,
+      "price": 18.95,
       "name": "Ni no kuni la vengeance de la sorciere celeste"
     },
     {
@@ -451,9 +451,9 @@
     {
       "uri": "http://www.priceminister.com/mfp/2002132/killzone-3-jeu-video#pid=133025394",
       "id": 57,
-      "lowestPrice": 5.8,
+      "lowestPrice": 5.69,
       "highestPrice": 5.9,
-      "price": 5.9,
+      "price": 5.69,
       "name": "Killzone 3 jeu video"
     },
     {
@@ -485,7 +485,7 @@
       "id": 62,
       "lowestPrice": 7,
       "highestPrice": 7.45,
-      "price": 7.35,
+      "price": 7.45,
       "name": "Red dead redemption jeu video"
     },
     {
