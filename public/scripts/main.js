@@ -40,7 +40,8 @@ function initDatatable() {
             {
                 "type": 'currency',
                 "render": function (data, type, row) {
-                    return '<span class="col-sm-12 text-right" title="from ' + formatMoney(row['lowestPrice']) + ' to ' + formatMoney(row['highestPrice']) + '">' + formatMoney(row['price']) + '</span>';
+                    var lastDate = _.sortBy(_.keys(row.prices)).pop();
+                    return '<span class="col-sm-12 text-right">' + formatMoney(row.prices[lastDate]) + '</span>';
                 },
                 "targets": 1
             },

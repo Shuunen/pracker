@@ -4,505 +4,505 @@
       "name": "Gta 5 jeu video",
       "uri": "http://www.priceminister.com/mfp/2001702/gta-5-jeu-video#pid=180624024",
       "id": 1,
-      "lowestPrice": 16.05,
-      "highestPrice": 22.55,
-      "price": 22.04
+      "prices": {
+        "2015-05-04": 22.45
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/5000223/lg-g3#pid=293839831",
-      "lowestPrice": 247,
-      "highestPrice": 317.5,
-      "price": 272.5,
       "name": "Lg g3",
-      "id": 2
+      "id": 2,
+      "prices": {
+        "2015-05-04": 307.5
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2002259/lego-batman-jeu-video#pid=71106674&scroll=reviews",
       "id": 3,
-      "lowestPrice": 10.05,
-      "highestPrice": 10.05,
-      "price": 10.05,
-      "name": "Lego batman jeu video"
+      "name": "Lego batman jeu video",
+      "prices": {
+        "2015-05-04": 10.05
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2002279/lego-star-wars-la-saga-complete-jeu-video#pid=59531974",
       "id": 4,
-      "lowestPrice": 21.73,
-      "highestPrice": 21.73,
-      "price": 21.73,
-      "name": "Lego star wars la saga complete jeu video"
+      "name": "Lego star wars la saga complete jeu video",
+      "prices": {
+        "2015-05-04": 21.73
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2002278/lego-star-wars-3-the-clone-wars-jeu-video#pid=115239023",
       "id": 5,
-      "lowestPrice": 16.21,
-      "highestPrice": 16.21,
-      "price": 16.21,
-      "name": "Lego star wars 3 the clone wars jeu video"
+      "name": "Lego star wars 3 the clone wars jeu video",
+      "prices": {
+        "2015-05-04": 15.95
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2002264/lego-harry-potter-annees-1-a-4-jeu-video#pid=90811205",
       "id": 6,
-      "lowestPrice": 18.73,
-      "highestPrice": 22.03,
-      "price": 18.73,
-      "name": "Lego harry potter annees 1 a 4 jeu video"
+      "name": "Lego harry potter annees 1 a 4 jeu video",
+      "prices": {
+        "2015-05-04": 18.73
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2002267/lego-indiana-jones-la-trilogie-originale-jeu-video#pid=66436486",
       "id": 7,
-      "lowestPrice": 26.05,
-      "highestPrice": 26.05,
-      "price": 26.05,
-      "name": "Lego indiana jones la trilogie originale jeu video"
+      "name": "Lego indiana jones la trilogie originale jeu video",
+      "prices": {
+        "2015-05-04": 26.05
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2002265/lego-harry-potter-annees-5-a-7-jeu-video#pid=132123430",
       "id": 8,
-      "lowestPrice": 16,
-      "highestPrice": 16.3,
-      "price": 16,
-      "name": "Lego harry potter annees 5 a 7 jeu video"
+      "name": "Lego harry potter annees 5 a 7 jeu video",
+      "prices": {
+        "2015-05-04": 16
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2002262/lego-le-seigneur-des-anneaux-jeu-video#pid=174969055",
       "id": 9,
-      "lowestPrice": 15.05,
-      "highestPrice": 15.05,
-      "price": 15.05,
-      "name": "Lego le seigneur des anneaux jeu video"
+      "name": "Lego le seigneur des anneaux jeu video",
+      "prices": {
+        "2015-05-04": 18.85
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/5026173/lego-the-hobbit#pid=273754559",
       "id": 10,
-      "lowestPrice": 20.05,
-      "highestPrice": 20.48,
-      "price": 20.05,
-      "name": "Lego the hobbit"
+      "name": "Lego the hobbit",
+      "prices": {
+        "2015-05-04": 18.26
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/5026169/lego-la-grande-aventure-le-jeu-video#pid=267572129",
       "id": 11,
-      "lowestPrice": 18.95,
-      "highestPrice": 20.99,
-      "price": 18.95,
-      "name": "Lego la grande aventure le jeu video"
+      "name": "Lego la grande aventure le jeu video",
+      "prices": {
+        "2015-05-04": 17.94
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2002271/lego-pirates-des-caraibes-jeu-video#pid=118306050",
       "id": 12,
-      "lowestPrice": 15.55,
-      "highestPrice": 15.55,
-      "price": 15.55,
-      "name": "Lego pirates des caraibes jeu video"
+      "name": "Lego pirates des caraibes jeu video",
+      "prices": {
+        "2015-05-04": 15.55
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2002270/lego-marvel-super-heroes-jeu-video#pid=226216500",
       "id": 13,
-      "lowestPrice": 22.39,
-      "highestPrice": 23.05,
-      "price": 22.95,
-      "name": "Lego marvel super heroes jeu video"
+      "name": "Lego marvel super heroes jeu video",
+      "prices": {
+        "2015-05-04": 22.04
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2002541/marvel-vs-capcom-3-fate-of-two-worlds-jeu-video#pid=116382792",
       "id": 14,
-      "lowestPrice": 15.9,
-      "highestPrice": 15.9,
-      "price": 15.9,
-      "name": "Marvel vs capcom 3 fate of two worlds jeu video"
+      "name": "Marvel vs capcom 3 fate of two worlds jeu video",
+      "prices": {
+        "2015-05-04": 19.55
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2003443/rayman-legends-jeu-video#pid=206756671",
       "id": 15,
-      "lowestPrice": 17.95,
-      "highestPrice": 19.05,
-      "price": 17.95,
-      "name": "Rayman legends jeu video"
+      "name": "Rayman legends jeu video",
+      "prices": {
+        "2015-05-04": 19.05
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2003445/rayman-origins-jeu-video#pid=132107175",
       "id": 16,
-      "lowestPrice": 12.05,
-      "highestPrice": 14.55,
-      "price": 12.05,
-      "name": "Rayman origins jeu video"
+      "name": "Rayman origins jeu video",
+      "prices": {
+        "2015-05-04": 14.55
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2003445/rayman-origins-jeu-video#pid=189266954",
       "id": 17,
-      "lowestPrice": 12.04,
-      "highestPrice": 12.04,
-      "price": 12.04,
-      "name": "Rayman origins jeu video"
+      "name": "Rayman origins jeu video",
+      "prices": {
+        "2015-05-04": 12.04
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2003443/rayman-legends-jeu-video#pid=238458428",
       "id": 18,
-      "lowestPrice": 20.98,
-      "highestPrice": 21.94,
-      "price": 20.98,
-      "name": "Rayman legends jeu video"
+      "name": "Rayman legends jeu video",
+      "prices": {
+        "2015-05-04": 20.96
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2003443/rayman-legends-jeu-video#pid=417846217",
       "id": 19,
-      "lowestPrice": 21.86,
-      "highestPrice": 22.41,
-      "price": 21.86,
-      "name": "Rayman legends jeu video"
+      "name": "Rayman legends jeu video",
+      "prices": {
+        "2015-05-04": 19.88
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2000456/blur-jeu-video#pid=84057174",
       "id": 20,
-      "lowestPrice": 17.95,
-      "highestPrice": 21.04,
-      "price": 17.95,
-      "name": "Blur jeu video"
+      "name": "Blur jeu video",
+      "prices": {
+        "2015-05-04": 15.45
+      }
     },
     {
       "uri": "http://www.priceminister.com/offer/buy/132204982/ps3-ico-shadow-of-the-colossus.html",
       "id": 21,
-      "lowestPrice": 33,
-      "highestPrice": 33,
-      "price": 33,
-      "name": "Ps3 ico shadow of the colossus"
+      "name": "Ps3 ico shadow of the colossus",
+      "prices": {
+        "2015-05-04": 33
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2001957/infamous-2-jeu-video#pid=181721256",
       "id": 22,
-      "lowestPrice": 8.74,
-      "highestPrice": 9.04,
-      "price": 9.04,
-      "name": "Infamous 2 jeu video"
+      "name": "Infamous 2 jeu video",
+      "prices": {
+        "2015-05-04": 8.26
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2001381/far-cry-3-the-lost-expeditions-jeu-video#pid=269957733",
       "id": 23,
-      "lowestPrice": 15.05,
-      "highestPrice": 15.85,
-      "price": 15.05,
-      "name": "Far cry 3 the lost expeditions jeu video"
+      "name": "Far cry 3 the lost expeditions jeu video",
+      "prices": {
+        "2015-05-04": 14.05
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2000235/assassins-creed-4-black-flag-jeu-video#pid=476461352",
       "id": 24,
-      "lowestPrice": 21.96,
-      "highestPrice": 21.96,
-      "price": 21.96,
-      "name": "Assassins creed 4 black flag jeu video"
+      "name": "Assassins creed 4 black flag jeu video",
+      "prices": {
+        "2015-05-04": 21.96
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2002260/lego-batman-2-dc-superheroes-jeu-video#pid=513096668",
       "id": 25,
-      "lowestPrice": 19.98,
-      "highestPrice": 19.98,
-      "price": 19.98,
-      "name": "Lego batman 2 dc superheroes jeu video"
+      "name": "Lego batman 2 dc superheroes jeu video",
+      "prices": {
+        "2015-05-04": 19.98
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2004327/tekken-6-jeu-video#pid=178023269",
       "id": 26,
-      "lowestPrice": 18.44,
-      "highestPrice": 18.45,
-      "price": 18.44,
-      "name": "Tekken 6 jeu video"
+      "name": "Tekken 6 jeu video",
+      "prices": {
+        "2015-05-04": 18.44
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2003462/red-dead-redemption-jeu-video#pid=449888278",
       "id": 27,
-      "lowestPrice": 19.99,
-      "highestPrice": 19.99,
-      "price": 19.99,
-      "name": "Red dead redemption jeu video"
+      "name": "Red dead redemption jeu video",
+      "prices": {
+        "2015-05-04": 19.99
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2003485/resident-evil-5-jeu-video#pid=223026839",
       "id": 28,
-      "lowestPrice": 19.05,
-      "highestPrice": 19.05,
-      "price": 19.05,
-      "name": "Resident evil 5 jeu video"
+      "name": "Resident evil 5 jeu video",
+      "prices": {
+        "2015-05-04": 19.05
+      }
     },
     {
       "uri": "http://www.priceminister.com/offer/buy/298035784/littlebigplanet-3.html",
       "id": 29,
-      "lowestPrice": 28.05,
-      "highestPrice": 31.45,
-      "price": 30.05,
-      "name": "Littlebigplanet 3"
+      "name": "Littlebigplanet 3",
+      "prices": {
+        "2015-05-04": 36.05
+      }
     },
     {
       "uri": "http://www.priceminister.com/offer/buy/238054903/littlebigplanet-2-essentiels-jeu-ps3.html",
       "id": 30,
-      "lowestPrice": 15.85,
-      "highestPrice": 15.85,
-      "price": 15.85,
-      "name": "Littlebigplanet 2 essentiels jeu ps3"
+      "name": "Littlebigplanet 2 essentiels jeu ps3",
+      "prices": {
+        "2015-05-04": 15.85
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2002382/little-big-planet-jeu-video#pid=71593906",
       "id": 31,
-      "lowestPrice": 6.95,
-      "highestPrice": 6.95,
-      "price": 6.95,
-      "name": "Little big planet jeu video"
+      "name": "Little big planet jeu video",
+      "prices": {
+        "2015-05-04": 6.95
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2002383/little-big-planet-2-jeu-video#pid=107645358",
       "id": 32,
-      "lowestPrice": 11.95,
-      "highestPrice": 11.95,
-      "price": 11.95,
-      "name": "Little big planet 2 jeu video"
+      "name": "Little big planet 2 jeu video",
+      "prices": {
+        "2015-05-04": 11.55
+      }
     },
     {
       "uri": "http://www.priceminister.com/offer/buy/163149034/littlebigplanet-essential.html",
       "id": 33,
-      "lowestPrice": 6.85,
-      "highestPrice": 6.85,
-      "price": 6.85,
-      "name": "Littlebigplanet essential"
+      "name": "Littlebigplanet essential",
+      "prices": {
+        "2015-05-04": 6.85
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2002383/little-big-planet-2-jeu-video#pid=133025387",
       "id": 34,
-      "lowestPrice": 13.65,
-      "highestPrice": 13.85,
-      "price": 13.65,
-      "name": "Little big planet 2 jeu video"
+      "name": "Little big planet 2 jeu video",
+      "prices": {
+        "2015-05-04": 13.65
+      }
     },
     {
       "uri": "http://www.priceminister.com/offer/buy/92807013/littlebigplanet-game-of-the-year-jeu-ps3.html",
       "id": 35,
-      "lowestPrice": 7.9,
-      "highestPrice": 7.9,
-      "price": 7.9,
-      "name": "Littlebigplanet game of the year jeu ps3"
+      "name": "Littlebigplanet game of the year jeu ps3",
+      "prices": {
+        "2015-05-04": 7.9
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2001659/god-of-war-ascension-jeu-video#pid=184973884",
       "id": 36,
-      "lowestPrice": 12.08,
-      "highestPrice": 12.08,
-      "price": 12.08,
-      "name": "God of war ascension jeu video"
+      "name": "God of war ascension jeu video",
+      "prices": {
+        "2015-05-04": 8.36
+      }
     },
     {
       "uri": "http://www.priceminister.com/offer/buy/220455901/god-of-war-3-collection-essential-jeu-ps3.html",
       "id": 37,
-      "lowestPrice": 11.16,
-      "highestPrice": 11.16,
-      "price": 11.16,
-      "name": "God of war 3 collection essential jeu ps3"
+      "name": "God of war 3 collection essential jeu ps3",
+      "prices": {
+        "2015-05-04": 11.16
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2001658/god-of-war-3-jeu-video#pid=92807006",
       "id": 38,
-      "lowestPrice": 5.73,
-      "highestPrice": 6.04,
-      "price": 6.04,
-      "name": "God of war 3 jeu video"
+      "name": "God of war 3 jeu video",
+      "prices": {
+        "2015-05-04": 5.55
+      }
     },
     {
       "uri": "http://www.priceminister.com/offer/buy/162849913/god-of-war-iii-essential.html",
       "id": 39,
-      "lowestPrice": 6.05,
-      "highestPrice": 6.05,
-      "price": 6.05,
-      "name": "God of war iii essential"
+      "name": "God of war iii essential",
+      "prices": {
+        "2015-05-04": 6.05
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2004331/tekken-tag-tournament-2-jeu-video#pid=160284572",
       "id": 40,
-      "lowestPrice": 13.04,
-      "highestPrice": 14.3,
-      "price": 13.04,
-      "name": "Tekken tag tournament 2 jeu video"
+      "name": "Tekken tag tournament 2 jeu video",
+      "prices": {
+        "2015-05-04": 13.04
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2004327/tekken-6-jeu-video#pid=81452752",
       "id": 41,
-      "lowestPrice": 11.95,
-      "highestPrice": 13.95,
-      "price": 11.95,
-      "name": "Tekken 6 jeu video"
+      "name": "Tekken 6 jeu video",
+      "prices": {
+        "2015-05-04": 14.05
+      }
     },
     {
       "uri": "http://www.priceminister.com/offer/buy/116078703/tekken-6-edition-plainum-jeu-ps3.html",
       "id": 42,
-      "lowestPrice": 17.94,
-      "highestPrice": 20.85,
-      "price": 17.94,
-      "name": "Tekken 6 edition plainum jeu ps3"
+      "name": "Tekken 6 edition plainum jeu ps3",
+      "prices": {
+        "2015-05-04": 15.05
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2000925/dead-or-alive-5-jeu-video#pid=160284571",
       "id": 43,
-      "lowestPrice": 13.04,
-      "highestPrice": 13.04,
-      "price": 13.04,
-      "name": "Dead or alive 5 jeu video"
+      "name": "Dead or alive 5 jeu video",
+      "prices": {
+        "2015-05-04": 14.05
+      }
     },
     {
       "uri": "http://www.priceminister.com/offer/buy/84057176/wipeout-hd-jeu-ps3.html",
       "id": 44,
-      "lowestPrice": 30,
-      "highestPrice": 30,
-      "price": 30,
-      "name": "Wipeout hd jeu ps3"
+      "name": "Wipeout hd jeu ps3",
+      "prices": {
+        "2015-05-04": 29.95
+      }
     },
     {
       "uri": "http://www.priceminister.com/offer/buy/171440290/ni-no-kuni-la-vengeance-de-la-sorciere-celeste.html",
       "id": 45,
-      "lowestPrice": 18.95,
-      "highestPrice": 21.05,
-      "price": 18.95,
-      "name": "Ni no kuni la vengeance de la sorciere celeste"
+      "name": "Ni no kuni la vengeance de la sorciere celeste",
+      "prices": {
+        "2015-05-04": 17.95
+      }
     },
     {
       "uri": "http://www.priceminister.com/offer/buy/269957734/ni-no-kuni-la-vengeance-de-la-sorciere-celeste-essentials.html",
       "id": 46,
-      "lowestPrice": 21.99,
-      "highestPrice": 21.99,
-      "price": 21.99,
-      "name": "Ni no kuni la vengeance de la sorciere celeste essentials"
+      "name": "Ni no kuni la vengeance de la sorciere celeste essentials",
+      "prices": {
+        "2015-05-04": 22.8
+      }
     },
     {
       "uri": "http://www.priceminister.com/offer/buy/493735070/guilty-gear-xrd-sign-import-japon.html",
       "id": 47,
-      "lowestPrice": 59.99,
-      "highestPrice": 59.99,
-      "price": 59.99,
-      "name": "Guilty gear xrd sign import japon"
+      "name": "Guilty gear xrd sign import japon",
+      "prices": {
+        "2015-05-04": 59.99
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2003493/resident-evil-revelations-jeu-video#pid=194061341",
       "id": 48,
-      "lowestPrice": 16.58,
-      "highestPrice": 16.58,
-      "price": 16.58,
-      "name": "Resident evil revelations jeu video"
+      "name": "Resident evil revelations jeu video",
+      "prices": {
+        "2015-05-04": 19.44
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2003485/resident-evil-5-jeu-video#pid=92351329",
       "id": 49,
-      "lowestPrice": 10.55,
-      "highestPrice": 10.55,
-      "price": 10.55,
-      "name": "Resident evil 5 jeu video"
+      "name": "Resident evil 5 jeu video",
+      "prices": {
+        "2015-05-04": 10.05
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2003485/resident-evil-5-jeu-video#pid=76257771",
       "id": 50,
-      "lowestPrice": 6.05,
-      "highestPrice": 6.05,
-      "price": 6.05,
-      "name": "Resident evil 5 jeu video"
+      "name": "Resident evil 5 jeu video",
+      "prices": {
+        "2015-05-04": 4.85
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2003485/resident-evil-5-jeu-video#pid=166546957",
       "id": 51,
-      "lowestPrice": 6.2,
-      "highestPrice": 6.2,
-      "price": 6.2,
-      "name": "Resident evil 5 jeu video"
+      "name": "Resident evil 5 jeu video",
+      "prices": {
+        "2015-05-04": 6.2
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2003485/resident-evil-5-jeu-video#pid=223026839",
       "id": 52,
-      "lowestPrice": 19.05,
-      "highestPrice": 19.05,
-      "price": 19.05,
-      "name": "Resident evil 5 jeu video"
+      "name": "Resident evil 5 jeu video",
+      "prices": {
+        "2015-05-04": 19.05
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2000927/dead-or-alive-5-ultimate-jeu-video#pid=228100655",
       "id": 53,
-      "lowestPrice": 16.55,
-      "highestPrice": 18.05,
-      "price": 18.05,
-      "name": "Dead or alive 5 ultimate jeu video"
+      "name": "Dead or alive 5 ultimate jeu video",
+      "prices": {
+        "2015-05-04": 19.75
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2002132/killzone-3-jeu-video#pid=114239536",
       "id": 54,
-      "lowestPrice": 5.64,
-      "highestPrice": 5.75,
-      "price": 5.64,
-      "name": "Killzone 3 jeu video"
+      "name": "Killzone 3 jeu video",
+      "prices": {
+        "2015-05-04": 5.04
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2002132/killzone-3-jeu-video#pid=117681263",
       "id": 55,
-      "lowestPrice": 7.74,
-      "highestPrice": 7.74,
-      "price": 7.74,
-      "name": "Killzone 3 jeu video"
+      "name": "Killzone 3 jeu video",
+      "prices": {
+        "2015-05-04": 7.74
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2002131/killzone-2-jeu-video#pid=75381574",
       "id": 56,
-      "lowestPrice": 3.95,
-      "highestPrice": 3.95,
-      "price": 3.95,
-      "name": "Killzone 2 jeu video"
+      "name": "Killzone 2 jeu video",
+      "prices": {
+        "2015-05-04": 3.95
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2002132/killzone-3-jeu-video#pid=133025394",
       "id": 57,
-      "lowestPrice": 5.69,
-      "highestPrice": 5.9,
-      "price": 5.69,
-      "name": "Killzone 3 jeu video"
+      "name": "Killzone 3 jeu video",
+      "prices": {
+        "2015-05-04": 5.69
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2002132/killzone-3-jeu-video#pid=124671411",
       "id": 58,
-      "lowestPrice": 7.45,
-      "highestPrice": 7.45,
-      "price": 7.45,
-      "name": "Killzone 3 jeu video"
+      "name": "Killzone 3 jeu video",
+      "prices": {
+        "2015-05-04": 7.45
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2002132/killzone-3-jeu-video#pid=191003150",
       "id": 60,
-      "lowestPrice": 7.32,
-      "highestPrice": 7.89,
-      "price": 7.32,
-      "name": "Killzone 3 jeu video"
+      "name": "Killzone 3 jeu video",
+      "prices": {
+        "2015-05-04": 7.22
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2002693/mirror-s-edge-jeu-video#pid=71670799",
       "id": 61,
-      "lowestPrice": 4.75,
-      "highestPrice": 6.44,
-      "price": 4.75,
-      "name": "Mirror s edge jeu video"
+      "name": "Mirror s edge jeu video",
+      "prices": {
+        "2015-05-04": 6.44
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2003462/red-dead-redemption-jeu-video#pid=91084162",
       "id": 62,
-      "lowestPrice": 7,
-      "highestPrice": 7.45,
-      "price": 7.45,
-      "name": "Red dead redemption jeu video"
+      "name": "Red dead redemption jeu video",
+      "prices": {
+        "2015-05-04": 8.36
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2003462/red-dead-redemption-jeu-video#pid=106490535",
       "id": 63,
-      "lowestPrice": 9.75,
-      "highestPrice": 9.75,
-      "price": 9.75,
-      "name": "Red dead redemption jeu video"
+      "name": "Red dead redemption jeu video",
+      "prices": {
+        "2015-05-04": 9.75
+      }
     },
     {
       "uri": "http://www.priceminister.com/mfp/2003462/red-dead-redemption-jeu-video#pid=104969397",
       "id": 64,
-      "lowestPrice": 9.55,
-      "highestPrice": 9.55,
-      "price": 9.55,
-      "name": "Red dead redemption jeu video"
+      "name": "Red dead redemption jeu video",
+      "prices": {
+        "2015-05-04": 9.55
+      }
     }
   ],
   "styles": [],
