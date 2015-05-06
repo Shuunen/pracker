@@ -93,7 +93,7 @@ var log = function (message, title) {
 var schedule = require('./node_modules/pomelo-schedule/lib/schedule');
 
 schedule.scheduleJob({
-    period: 30 * 60 * 1000 // 30 minutes
+    period: 60 * 60 * 1000 // 1 hour
 }, checkPrices, {name: 'checkPrices'});
 
 // Test job

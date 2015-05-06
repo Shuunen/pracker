@@ -69,3 +69,12 @@ body {
 
 .no-padding {
   padding: 0; }
+
+/* Graphs customs */
+.sparkline-line {
+  display: flex;
+  align-items: baseline; }
+
+[data-hint]:after {
+  min-width: 14px;
+  text-align: center; }

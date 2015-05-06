@@ -1,3 +1,24 @@
+/* Allows to display tiny charts like ▁▄▆█▂▁ */
+function sparkline(numbers) {
+    var ticks = ['▁', '▂', '▃', '▄', '▅', '▆', '▇', '█'],
+        max = Math.max.apply(null, numbers),
+        min = Math.min.apply(null, numbers),
+        line = '',
+        f, i;
+    f = ~~(((max - min) << 8) / (ticks.length - 1));
+    if (f < 1) {
+        f = 1;
+    }
+    for (i = 0; i < numbers.length; i++) {
+        var number = numbers[i];
+        var bar = ticks[~~(((number - min) << 8) / f)];
+        bar = '<div class="sparkline-bar hint--top hint--no-animate" data-hint="' + number + '">' + bar + '</div>';
+        line += bar;
+    }
+    line = '<div class="sparkline-line">' + line + '</div>';
+    return line;
+};
+
 function initDatatable() {
 
     jQuery.extend(jQuery.fn.dataTableExt.oSort, {
@@ -24,10 +45,10 @@ function initDatatable() {
                 "data": "name"
             },
             {
-                "data": "price"
+                "data": "prices"
             },
             {
-                "data": "price" // fake placeholder for discount display
+                "data": "prices" // fake placeholder for chart display
             }
         ],
         "columnDefs": [
@@ -46,21 +67,18 @@ function initDatatable() {
                 "targets": 1
             },
             {
-                "type": 'discount',
+                "type": 'chart',
                 "render": function (data, type, row) {
-
-                    // type cast security
-                    price = parseFloat(parseFloat(row['price']).toFixed(2));
-                    lowestPrice = parseFloat(parseFloat(row['lowestPrice']).toFixed(2));
-                    highestPrice = parseFloat(parseFloat(row['highestPrice']).toFixed(2));
-
-                    var average = (lowestPrice + highestPrice) / 2;
-                    var discount = (1 - (price / average)) * 100;
-                    discount = (isNaN(discount) ? 0 : discount.toFixed(0)) + '%';
-                    var difference = Math.round(average - price);
-                    difference = difference ? ' - ' + difference + '€' : '';
-                    var str = discount + difference;
-                    return '<span class="col-sm-12 text-right">' + str + '</span>';
+                    var orderedDates = _.sortBy(_.keys(row.prices));
+                    var limit = 10;
+                    var lastNDates = orderedDates.splice(orderedDates.length - limit, orderedDates.length);
+                    var chartValues = [];
+                    for (var i = 0; i < lastNDates.length; i++) {
+                        var date = lastNDates[i];
+                        var value = row.prices[date];
+                        chartValues.push(value);
+                    }
+                    return sparkline(chartValues);
                 },
                 "targets": 2
             }
