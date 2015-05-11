@@ -1,23 +1,51 @@
 /* Allows to display tiny charts like ▁▄▆█▂▁ */
 function sparkline(numbers) {
+
+    // make a clone copy
+    var originalNumbers = (JSON.parse(JSON.stringify(numbers)));
+
+    for (i = 0; i < numbers.length; i++) {
+        numbers[i] = numbers[i] * 100;
+    }
+
     var ticks = ['▁', '▂', '▃', '▄', '▅', '▆', '▇', '█'],
         max = Math.max.apply(null, numbers),
         min = Math.min.apply(null, numbers),
         line = '',
         f, i;
+
     f = ~~(((max - min) << 8) / (ticks.length - 1));
+
     if (f < 1) {
         f = 1;
     }
+
     for (i = 0; i < numbers.length; i++) {
         var number = numbers[i];
+        var originalNumber = originalNumbers[i];
         var bar = ticks[~~(((number - min) << 8) / f)];
-        bar = '<div class="sparkline-bar hint--top hint--no-animate" data-hint="' + number + '">' + bar + '</div>';
+        bar = '<div class="sparkline-bar hint--top hint--no-animate" data-hint="' + originalNumber + '">' + bar + '</div>';
         line += bar;
     }
+
     line = '<div class="sparkline-line">' + line + '</div>';
+
     return line;
-};
+}
+
+function getLastNPrices(row, limit) {
+
+    var orderedDates = _.sortBy(_.keys(row.prices));
+    var lastNDates = orderedDates.splice(orderedDates.length - limit, orderedDates.length);
+    var chartValues = [];
+    for (var i = 0; i < lastNDates.length; i++) {
+        var date = lastNDates[i];
+        var value = row.prices[date];
+        chartValues.push(value);
+    }
+
+    return chartValues;
+}
 
 function initDatatable() {
 
@@ -48,6 +76,9 @@ function initDatatable() {
                 "data": "prices"
             },
             {
+                "data": "prices" // fake placeholder for discount display
+            },
+            {
                 "data": "prices" // fake placeholder for chart display
             }
         ],
@@ -61,26 +92,29 @@ function initDatatable() {
             {
                 "type": 'currency',
                 "render": function (data, type, row) {
-                    var lastDate = _.sortBy(_.keys(row.prices)).pop();
-                    return '<span class="col-sm-12 text-right">' + formatMoney(row.prices[lastDate]) + '</span>';
+                    var lastPrice = getLastNPrices(row, 1)[0];
+                    return '<span class="col-sm-12 text-right">' + formatMoney(lastPrice) + '</span>';
                 },
                 "targets": 1
+            }, {
+                "type": 'discount',
+                "render": function (data, type, row) {
+                    var lastPrices = getLastNPrices(row, 200);
+                    var middleIndex = parseInt(lastPrices.length / 2);
+                    var sortedPrices = _.sortBy(lastPrices);
+                    var medianPrice = sortedPrices[middleIndex];
+                    var lastPrice = getLastNPrices(row, 1)[0];
+                    var medianDiscount = Math.round((1 - (lastPrice / medianPrice)) * 100);
+                    return '<span class="col-sm-12 text-right" title="median price : ' + formatMoney(medianPrice) + '">' + medianDiscount + '&nbsp;%</span>';
+                },
+                "targets": 2
             },
             {
                 "type": 'chart',
                 "render": function (data, type, row) {
-                    var orderedDates = _.sortBy(_.keys(row.prices));
-                    var limit = 10;
-                    var lastNDates = orderedDates.splice(orderedDates.length - limit, orderedDates.length);
-                    var chartValues = [];
-                    for (var i = 0; i < lastNDates.length; i++) {
-                        var date = lastNDates[i];
-                        var value = row.prices[date];
-                        chartValues.push(value);
-                    }
-                    return sparkline(chartValues);
+                    return sparkline(getLastNPrices(row, 10));
                 },
-                "targets": 2
+                "targets": 3
             }
         ]
     });
