@@ -25,6 +25,7 @@ var notifierOptions = {
 
 
 // Job
+var _ = require('lodash');
 var PriceFinder = require("price-finder");
 var priceFinder = new PriceFinder();
 var checkPrices = function (data) {
@@ -68,12 +69,39 @@ var checkNext = function (products, i) {
         log('adding price ' + data.price + ' for : ' + data.name);
         product.prices[today] = data.price;
 
+        // update medianPrice & medianDiscount
+        var lastPrices = getLastNPrices(product, 200);
+        var middleIndex = parseInt(lastPrices.length / 2);
+        var sortedPrices = _.sortBy(lastPrices);
+        var medianPrice = sortedPrices[middleIndex];
+        var lastPrice = getLastNPrices(product, 1)[0];
+        var medianDiscount = Math.round((1 - (lastPrice / medianPrice)) * 100);
+        product.medianPrice = medianPrice;
+        product.medianDiscount = medianDiscount;
+
         // check next product
         checkNext(products, ++i);
     });
 
 };
 
+/*
+ * Return an array of the last n prices
+ * Ex : getLastNPrices(product, 3) -> (array) [10.55, 9.60, 10.20]
+ */
+var getLastNPrices = function (product, limit) {
+
+    var orderedDates = _.sortBy(_.keys(product.prices));
+    var lastNDates = orderedDates.splice(orderedDates.length - limit, orderedDates.length);
+    var lastNPrices = [];
+    for (var i = 0; i < lastNDates.length; i++) {
+        var date = lastNDates[i];
+        var value = product.prices[date];
+        lastNPrices.push(value);
+    }
+
+    return lastNPrices;
+};
 
 // Logger and notifier
 var log = function (message, title) {
@@ -91,7 +119,6 @@ var log = function (message, title) {
 
 // Scheduler
 var schedule = require('./node_modules/pomelo-schedule/lib/schedule');
-
 schedule.scheduleJob({
     period: 60 * 60 * 1000 // 1 hour
 }, checkPrices, {name: 'checkPrices'});

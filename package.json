@@ -16,6 +16,7 @@
   "license": "MIT",
   "dependencies": {
     "json-server": "^0.7.1",
+    "lodash": "^3.8.0",
     "lowdb": "^0.7.3",
     "nma": "^0.2.2",
     "node-notifier": "^4.2.1",

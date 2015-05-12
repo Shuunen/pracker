@@ -1,5 +1,8 @@
-/* Allows to display tiny charts like ▁▄▆█▂▁ */
-function sparkline(numbers) {
+/*
+ * Display tiny charts like ▁▄▆█▂▁
+ * Ex : sparkline([10.55, 9.60, 10.20]) -> (string) "█▄▆"
+ */
+var sparkline = function (numbers) {
 
     // make a clone copy
     var originalNumbers = (JSON.parse(JSON.stringify(numbers)));
@@ -33,20 +36,27 @@ function sparkline(numbers) {
     return line;
 }
 
-function getLastNPrices(row, limit) {
+/*
+ * Return an array of the last n prices
+ * Ex : getLastNPrices(product, 3) -> (array) [10.55, 9.60, 10.20]
+ */
+var getLastNPrices = function (product, limit) {
 
-    var orderedDates = _.sortBy(_.keys(row.prices));
+    var orderedDates = _.sortBy(_.keys(product.prices));
     var lastNDates = orderedDates.splice(orderedDates.length - limit, orderedDates.length);
-    var chartValues = [];
+    var lastNPrices = [];
     for (var i = 0; i < lastNDates.length; i++) {
         var date = lastNDates[i];
-        var value = row.prices[date];
-        chartValues.push(value);
+        var value = product.prices[date];
+        lastNPrices.push(value);
     }
 
-    return chartValues;
+    return lastNPrices;
 }
 
+/*
+ * Initialize datatables
+ */
 function initDatatable() {
 
     jQuery.extend(jQuery.fn.dataTableExt.oSort, {
@@ -68,6 +78,7 @@ function initDatatable() {
             "dataSrc": 'products'
         },
         "order": [[2, "desc"]],
+        "lengthMenu": [[25, 50, -1], [25, 50, "All"]],
         "columns": [
             {
                 "data": "name"
@@ -99,13 +110,8 @@ function initDatatable() {
             }, {
                 "type": 'discount',
                 "render": function (data, type, row) {
-                    var lastPrices = getLastNPrices(row, 200);
-                    var middleIndex = parseInt(lastPrices.length / 2);
-                    var sortedPrices = _.sortBy(lastPrices);
-                    var medianPrice = sortedPrices[middleIndex];
-                    var lastPrice = getLastNPrices(row, 1)[0];
-                    var medianDiscount = Math.round((1 - (lastPrice / medianPrice)) * 100);
-                    return '<span class="col-sm-12 text-right" title="median price : ' + formatMoney(medianPrice) + '">' + medianDiscount + '&nbsp;%</span>';
+                    var niceDiscountClass = (row['medianDiscount'] > 20) ? 'nice-discount' : '';
+                    return '<span class="col-sm-12 text-right ' + niceDiscountClass + '" title="median price : ' + formatMoney(row['medianPrice']) + '">' + row['medianDiscount'] + '&nbsp;%</span>';
                 },
                 "targets": 2
             },
@@ -121,6 +127,10 @@ function initDatatable() {
 
 }
 
+/*
+ * Format raw numbers to money display
+ * Ex : formatMoney(5.96) -> (string) "5,96 €"
+ */
 function formatMoney(number, currency, decPlaces, thouSeparator, decSeparator) {
     currency = currency === undefined ? '&euro;' : currency;
     decPlaces = isNaN(decPlaces = Math.abs(decPlaces)) ? 2 : decPlaces;

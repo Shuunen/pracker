@@ -28,8 +28,7 @@ body {
     background-position: right top; } }
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
-  /* Make the masthead heading the same height as the navigation */ }
+  border-bottom: 1px solid #e5e5e5; }
   .header h3 {
     padding: 0;
     margin: 0;
@@ -78,3 +77,15 @@ body {
 [data-hint]:after {
   min-width: 14px;
   text-align: center; }
+
+/* Table customs */
+.nice-discount {
+  color: chocolate;
+  font-weight: bold; }
+
+table.table th {
+  position: relative;
+  padding-right: 25px !important; }
+  table.table th:after {
+    position: absolute;
+    right: 5px; }
