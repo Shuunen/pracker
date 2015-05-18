@@ -42,13 +42,20 @@ var sparkline = function (numbers) {
  */
 var getLastNPrices = function (product, limit) {
 
-    var orderedDates = _.sortBy(_.keys(product.prices));
-    var lastNDates = orderedDates.splice(orderedDates.length - limit, orderedDates.length);
     var lastNPrices = [];
-    for (var i = 0; i < lastNDates.length; i++) {
-        var date = lastNDates[i];
-        var value = product.prices[date];
-        lastNPrices.push(value);
+
+    if (product.prices) {
+
+        var dates = JSON.stringify(product.prices).match(/\d{4}-\d{2}-\d{2}/g).sort();
+        var sliceStart = ((dates.length - limit) > 0) ? (dates.length - limit) : 0;
+        sliceStart = sliceStart > 0 ? sliceStart : 0;
+        var lastNDates = dates.slice(sliceStart, dates.length);
+
+        for (var i = 0; i < lastNDates.length; i++) {
+            var date = lastNDates[i];
+            var value = product.prices[date];
+            lastNPrices.push(value);
+        }
     }
 
     return lastNPrices;
@@ -91,12 +98,15 @@ function initDatatable() {
             },
             {
                 "data": "prices" // fake placeholder for chart display
+            },
+            {
+                "data": "prices" // fake placeholder for actions display
             }
         ],
         "columnDefs": [
             {
                 "render": function (data, type, row) {
-                    return '<a href="' + row['uri'] + '" title="id : ' + row['id'] + '">' + row['name'] + '</a>';
+                    return '<a href="' + row['uri'] + '" title="id : ' + row['id'] + '" data-id="' + row['id'] + '">' + row['name'] + '</a>';
                 },
                 "targets": 0
             },
@@ -118,9 +128,18 @@ function initDatatable() {
             {
                 "type": 'chart',
                 "render": function (data, type, row) {
-                    return sparkline(getLastNPrices(row, 10));
+                    var lastPrices = getLastNPrices(row, 10);
+                    return sparkline(lastPrices);
                 },
                 "targets": 3
+            },
+            {
+                "type": 'chart',
+                "render": function (data, type, row) {
+                    var deleteIcon = '<span class="glyphicon glyphicon-remove action-remove"></span>';
+                    return '<span class="col-sm-12 text-center actions">' + deleteIcon + '</span>';
+                },
+                "targets": 4
             }
         ]
     });
@@ -144,7 +163,7 @@ function formatMoney(number, currency, decPlaces, thouSeparator, decSeparator) {
 
 function handleForm() {
 
-    var form = document.querySelector('form');
+    var form = document.querySelector('form.action-add');
     var addInput = form.querySelector('input');
 
     form.addEventListener('submit', function (event) {
@@ -154,16 +173,47 @@ function handleForm() {
             var newProduct = {
                 "uri": addInput.value
             };
-            $.post("products", newProduct)
-                .done(function () {
+            $.ajax({
+                url: 'products',
+                data: newProduct,
+                type: 'POST',
+                success: function () {
                     addInput.value = '';
-                    var line = $('<p>Product added :)</p>');
-                    $(form).append(line);
+                    var message = $('<div class="alert alert-success" role="alert">Product added.</div>');
+                    $(form).append(message);
                     setTimeout(function () {
-                        line.remove();
+                        message.remove();
                     }, 1500);
-                });
+                }
+            });
         }
+    });
+
+}
+
+function handleActions() {
+
+    $('body').on('click', '.glyphicon', function () {
+
+        var $this = $(this);
+        var productId = $this.parents('tr').find('a[data-id]').attr('data-id');
+
+        if ($this.hasClass('action-remove')) {
+            console.log('removing product with id ' + productId);
+            $.ajax({
+                url: 'products/' + productId,
+                type: 'DELETE',
+                success: function () {
+                    var message = $('<div class="alert alert-success" role="alert">Product deleted.</div>');
+                    $('.header').after(message);
+                    setTimeout(function () {
+                        message.remove();
+                        $('#table').DataTable().row($this.parents('tr')[0]._DT_RowIndex).remove().draw();
+                    }, 1500);
+                }
+            });
+        }
+
     });
 
 }
@@ -171,6 +221,7 @@ function handleForm() {
 
 function init() {
     handleForm();
+    handleActions();
     initDatatable();
 }
 

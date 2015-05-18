@@ -25,7 +25,6 @@ var notifierOptions = {
 
 
 // Job
-var _ = require('lodash');
 var PriceFinder = require("price-finder");
 var priceFinder = new PriceFinder();
 var checkPrices = function (data) {
@@ -69,13 +68,28 @@ var checkNext = function (products, i) {
         log('adding price ' + data.price + ' for : ' + data.name);
         product.prices[today] = data.price;
 
-        // update medianPrice & medianDiscount
+        // calculate medianPrice & medianDiscount
         var lastPrices = getLastNPrices(product, 200);
         var middleIndex = parseInt(lastPrices.length / 2);
-        var sortedPrices = _.sortBy(lastPrices);
+        var sortedPrices = lastPrices.sort();
         var medianPrice = sortedPrices[middleIndex];
         var lastPrice = getLastNPrices(product, 1)[0];
         var medianDiscount = Math.round((1 - (lastPrice / medianPrice)) * 100);
+        var diffLastNewMedianPrice = Math.round((1 - ((product.medianPrice - medianPrice) / medianPrice)) * 100);
+
+        // if the median price goes down and the change is a least 1%
+        if ((medianPrice < product.medianPrice) && (diffLastNewMedianPrice > 1)) {
+            log('median price is now ' + medianPrice + ' (' + diffLastNewMedianPrice + '% lower) for : ' + data.name);
+        }
+
+        // if the median discount is nice
+        if (medianDiscount > 30) {
+            log('great discount : ' + medianDiscount + '% off !', data.name);
+        } else if (medianDiscount > 20) {
+            log('nice discount : ' + medianDiscount + '% off', data.name);
+        }
+
+        // update medianPrice & medianDiscount
         product.medianPrice = medianPrice;
         product.medianDiscount = medianDiscount;
 
@@ -91,17 +105,18 @@ var checkNext = function (products, i) {
  */
 var getLastNPrices = function (product, limit) {
 
-    var orderedDates = _.sortBy(_.keys(product.prices));
-    var lastNDates = orderedDates.splice(orderedDates.length - limit, orderedDates.length);
+    var dates = JSON.stringify(product.prices).match(/\d{4}-\d{2}-\d{2}/g).sort();
+    var sliceStart = ((dates.length - limit) > 0) ? (dates.length - limit) : 0;
+    sliceStart = sliceStart > 0 ? sliceStart : 0;
+    var lastNDates = dates.slice(sliceStart, dates.length);
     var lastNPrices = [];
     for (var i = 0; i < lastNDates.length; i++) {
         var date = lastNDates[i];
         var value = product.prices[date];
         lastNPrices.push(value);
     }
-
     return lastNPrices;
-};
+}
 
 // Logger and notifier
 var log = function (message, title) {

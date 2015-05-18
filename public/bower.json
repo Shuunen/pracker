@@ -23,7 +23,6 @@
   "dependencies": {
     "bootstrap": "~3.3.4",
     "datatables-bootstrap3": "*",
-    "lodash": "~3.8.0",
     "hint.css": "~1.3.4"
   }
 }

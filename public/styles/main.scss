@@ -107,11 +107,25 @@ body {
   font-weight: bold;
 }
 
-table.table th {
-  position: relative;
-  padding-right: 25px !important;
-  &:after {
-    position: absolute;
-    right: 5px;
+table.table {
+  th {
+    position: relative;
+    padding-right: 25px !important;
+    &:after {
+      position: absolute;
+      right: 5px;
+    }
+  }
+  td {
+    white-space: nowrap;
+  }
+}
+
+/* Actions */
+.actions > span {
+  cursor: pointer;
+  opacity: 0.3;
+  &:hover {
+    opacity: 0.8;
   }
 }

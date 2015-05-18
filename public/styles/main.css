@@ -89,3 +89,12 @@ table.table th {
   table.table th:after {
     position: absolute;
     right: 5px; }
+table.table td {
+  white-space: nowrap; }
+
+/* Actions */
+.actions > span {
+  cursor: pointer;
+  opacity: 0.3; }
+  .actions > span:hover {
+    opacity: 0.8; }
