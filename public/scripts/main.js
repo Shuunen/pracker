@@ -1,67 +1,4 @@
 /*
- * Display tiny charts like ▁▄▆█▂▁
- * Ex : sparkline([10.55, 9.60, 10.20]) -> (string) "█▄▆"
- */
-var sparkline = function (numbers) {
-
-    // make a clone copy
-    var originalNumbers = (JSON.parse(JSON.stringify(numbers)));
-
-    for (i = 0; i < numbers.length; i++) {
-        numbers[i] = numbers[i] * 100;
-    }
-
-    var ticks = ['▁', '▂', '▃', '▄', '▅', '▆', '▇', '█'],
-        max = Math.max.apply(null, numbers),
-        min = Math.min.apply(null, numbers),
-        line = '',
-        f, i;
-
-    f = ~~(((max - min) << 8) / (ticks.length - 1));
-
-    if (f < 1) {
-        f = 1;
-    }
-
-    for (i = 0; i < numbers.length; i++) {
-        var number = numbers[i];
-        var originalNumber = originalNumbers[i];
-        var bar = ticks[~~(((number - min) << 8) / f)];
-        bar = '<div class="sparkline-bar hint--top hint--no-animate" data-hint="' + originalNumber + '">' + bar + '</div>';
-        line += bar;
-    }
-
-    line = '<div class="sparkline-line">' + line + '</div>';
-
-    return line;
-}
-
-/*
- * Return an array of the last n prices
- * Ex : getLastNPrices(product, 3) -> (array) [10.55, 9.60, 10.20]
- */
-var getLastNPrices = function (product, limit) {
-
-    var lastNPrices = [];
-
-    if (product.prices) {
-
-        var dates = JSON.stringify(product.prices).match(/\d{4}-\d{2}-\d{2}/g).sort();
-        var sliceStart = ((dates.length - limit) > 0) ? (dates.length - limit) : 0;
-        sliceStart = sliceStart > 0 ? sliceStart : 0;
-        var lastNDates = dates.slice(sliceStart, dates.length);
-
-        for (var i = 0; i < lastNDates.length; i++) {
-            var date = lastNDates[i];
-            var value = product.prices[date];
-            lastNPrices.push(value);
-        }
-    }
-
-    return lastNPrices;
-}
-
-/*
  * Initialize datatables
  */
 function initDatatable() {
@@ -135,7 +72,7 @@ function initDatatable() {
             },
             {
                 "type": 'chart',
-                "render": function (data, type, row) {
+                "render": function () {
                     var deleteIcon = '<span class="glyphicon glyphicon-remove action-remove"></span>';
                     return '<span class="col-sm-12 text-center actions">' + deleteIcon + '</span>';
                 },
@@ -147,19 +84,29 @@ function initDatatable() {
 }
 
 /*
- * Format raw numbers to money display
- * Ex : formatMoney(5.96) -> (string) "5,96 €"
+ * Return an array of the last n prices
+ * Ex : getLastNPrices(product, 3) -> (array) [10.55, 9.60, 10.20]
  */
-function formatMoney(number, currency, decPlaces, thouSeparator, decSeparator) {
-    currency = currency === undefined ? '&euro;' : currency;
-    decPlaces = isNaN(decPlaces = Math.abs(decPlaces)) ? 2 : decPlaces;
-    decSeparator = decSeparator == undefined ? "," : decSeparator;
-    thouSeparator = thouSeparator == undefined ? " " : thouSeparator;
-    var sign = number < 0 ? "-" : "",
-        i = parseInt(n = Math.abs(+number || 0).toFixed(decPlaces)) + "",
-        j = (j = i.length) > 3 ? j % 3 : 0;
-    return sign + (j ? i.substr(0, j) + thouSeparator : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + thouSeparator) + (decPlaces ? decSeparator + Math.abs(number - i).toFixed(decPlaces).slice(2) : "") + ' ' + currency;
-}
+var getLastNPrices = function (product, limit) {
+
+    var lastNPrices = [];
+
+    if (product.prices) {
+
+        var dates = JSON.stringify(product.prices).match(/\d{4}-\d{2}-\d{2}/g).sort();
+        var sliceStart = ((dates.length - limit) > 0) ? (dates.length - limit) : 0;
+        sliceStart = sliceStart > 0 ? sliceStart : 0;
+        var lastNDates = dates.slice(sliceStart, dates.length);
+
+        for (var i = 0; i < lastNDates.length; i++) {
+            var date = lastNDates[i];
+            var value = product.prices[date];
+            lastNPrices.push(value);
+        }
+    }
+
+    return lastNPrices;
+};
 
 function handleForm() {
 
@@ -179,11 +126,10 @@ function handleForm() {
                 type: 'POST',
                 success: function () {
                     addInput.value = '';
-                    var message = $('<div class="alert alert-success" role="alert">Product added.</div>');
-                    $(form).append(message);
-                    setTimeout(function () {
-                        message.remove();
-                    }, 1500);
+                    $.smkAlert({text: 'Product added"', type: 'success'});
+                },
+                error: function () {
+                    $.smkAlert({text: 'Product has not been added"', type: 'danger'});
                 }
             });
         }
@@ -204,12 +150,14 @@ function handleActions() {
                 url: 'products/' + productId,
                 type: 'DELETE',
                 success: function () {
-                    var message = $('<div class="alert alert-success" role="alert">Product deleted.</div>');
-                    $('.header').after(message);
-                    setTimeout(function () {
-                        message.remove();
-                        $('#table').DataTable().row($this.parents('tr')[0]._DT_RowIndex).remove().draw();
-                    }, 1500);
+                    $.smkAlert({text: 'Product deleted"', type: 'success'});
+                    var $tr = $this.parents('tr');
+                    $tr.fadeOut('slow', function () {
+                        $('#table').DataTable().row($tr[0]._DT_RowIndex).remove().draw();
+                    });
+                },
+                error: function () {
+                    $.smkAlert({text: 'Product ' + productId + ' has not been deleted"', type: 'danger'});
                 }
             });
         }
@@ -217,7 +165,6 @@ function handleActions() {
     });
 
 }
-
 
 function init() {
     handleForm();

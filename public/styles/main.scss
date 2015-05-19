@@ -49,6 +49,7 @@ body {
 
     background: url("../images/paint.png") repeat, white;
     -webkit-text-fill-color: transparent;
+    //noinspection CssInvalidPropertyValue
     -webkit-background-clip: text;
     -webkit-animation-name: masked-animation;
     -webkit-animation-duration: 60s;
@@ -59,9 +60,12 @@ body {
       font-size: 29px;
       text-transform: none;
       font-family: sans-serif;
-      text-indent: 0px;
+      text-indent: 0;
       padding-bottom: 20px;
     }
+  }
+  &:hover {
+    text-decoration: none;
   }
 }
 

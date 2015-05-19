@@ -49,8 +49,10 @@ body {
       font-size: 29px;
       text-transform: none;
       font-family: sans-serif;
-      text-indent: 0px;
+      text-indent: 0;
       padding-bottom: 20px; }
+  .header:hover {
+    text-decoration: none; }
 
 /* Custom page footer */
 .footer {

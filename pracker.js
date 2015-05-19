@@ -23,7 +23,6 @@ var notifierOptions = {
     wait: false
 };
 
-
 // Job
 var PriceFinder = require("price-finder");
 var priceFinder = new PriceFinder();
@@ -49,6 +48,7 @@ var checkNext = function (products, i) {
 
         if (!data || !data.name) {
             log('data error on product uri : ' + product.uri);
+            checkNext(products, ++i);
             return;
         }
 
@@ -116,7 +116,7 @@ var getLastNPrices = function (product, limit) {
         lastNPrices.push(value);
     }
     return lastNPrices;
-}
+};
 
 // Logger and notifier
 var log = function (message, title) {
