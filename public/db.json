@@ -3,7 +3,7 @@
     {
       "uri": "http://www.priceminister.com/mfp/2002259/lego-batman-jeu-video#pid=71106674&scroll=reviews",
       "id": 3,
-      "name": "Lego batman jeu video",
+      "name": "Lego batman",
       "prices": {
         "2015-05-04": 10.05,
         "2015-05-05": 10.05,
@@ -13,10 +13,12 @@
         "2015-05-12": 9.95,
         "2015-05-13": 14.74,
         "2015-05-18": 12.35,
-        "2015-05-19": 12.35
+        "2015-05-19": 12.35,
+        "2015-05-20": 12.35,
+        "2015-05-21": 12.05
       },
-      "medianPrice": 14.74,
-      "medianDiscount": 16
+      "medianPrice": 12.35,
+      "medianDiscount": 2
     },
     {
       "uri": "http://www.priceminister.com/offer/buy/220455901/god-of-war-3-collection-essential-jeu-ps3.html",
@@ -39,7 +41,7 @@
     {
       "uri": "http://www.priceminister.com/mfp/2002279/lego-star-wars-la-saga-complete-jeu-video#pid=59531974",
       "id": 4,
-      "name": "Lego star wars la saga complete jeu video",
+      "name": "Lego star wars la saga complete",
       "prices": {
         "2015-05-04": 21.73,
         "2015-05-05": 21.73,
@@ -49,7 +51,9 @@
         "2015-05-12": 21.73,
         "2015-05-13": 21.73,
         "2015-05-18": 21.73,
-        "2015-05-19": 21.73
+        "2015-05-19": 21.73,
+        "2015-05-20": 21.73,
+        "2015-05-21": 21.73
       },
       "medianPrice": 21.73,
       "medianDiscount": 0
@@ -57,7 +61,7 @@
     {
       "uri": "http://www.priceminister.com/mfp/2002264/lego-harry-potter-annees-1-a-4-jeu-video#pid=90811205",
       "id": 6,
-      "name": "Lego harry potter annees 1 a 4 jeu video",
+      "name": "Lego harry potter annees 1 a 4",
       "prices": {
         "2015-05-04": 18.73,
         "2015-05-05": 18.73,
@@ -67,7 +71,9 @@
         "2015-05-12": 17.75,
         "2015-05-13": 17.05,
         "2015-05-18": 17.25,
-        "2015-05-19": 17.25
+        "2015-05-19": 17.25,
+        "2015-05-20": 17.25,
+        "2015-05-21": 17.25
       },
       "medianPrice": 17.75,
       "medianDiscount": 3
@@ -75,7 +81,7 @@
     {
       "uri": "http://www.priceminister.com/mfp/2002267/lego-indiana-jones-la-trilogie-originale-jeu-video#pid=66436486",
       "id": 7,
-      "name": "Lego indiana jones la trilogie originale jeu video",
+      "name": "Lego indiana jones la trilogie originale",
       "prices": {
         "2015-05-04": 26.05,
         "2015-05-05": 26.05,
@@ -85,7 +91,9 @@
         "2015-05-12": 26.05,
         "2015-05-13": 24.05,
         "2015-05-18": 27.75,
-        "2015-05-19": 27.75
+        "2015-05-19": 27.75,
+        "2015-05-20": 27.75,
+        "2015-05-21": 27.85
       },
       "medianPrice": 26.05,
       "medianDiscount": -7
@@ -93,7 +101,7 @@
     {
       "uri": "http://www.priceminister.com/mfp/2002265/lego-harry-potter-annees-5-a-7-jeu-video#pid=132123430",
       "id": 8,
-      "name": "Lego harry potter annees 5 a 7 jeu video",
+      "name": "Lego harry potter annees 5 a 7",
       "prices": {
         "2015-05-04": 16,
         "2015-05-05": 16,
@@ -103,7 +111,9 @@
         "2015-05-12": 15.05,
         "2015-05-13": 15.05,
         "2015-05-18": 15.04,
-        "2015-05-19": 15.04
+        "2015-05-19": 15.04,
+        "2015-05-20": 15.04,
+        "2015-05-21": 15.05
       },
       "medianPrice": 15.05,
       "medianDiscount": 0
@@ -111,7 +121,7 @@
     {
       "uri": "http://www.priceminister.com/mfp/2002262/lego-le-seigneur-des-anneaux-jeu-video#pid=174969055",
       "id": 9,
-      "name": "Lego le seigneur des anneaux jeu video",
+      "name": "Lego le seigneur des anneaux",
       "prices": {
         "2015-05-04": 16.85,
         "2015-05-05": 16.85,
@@ -121,10 +131,12 @@
         "2015-05-12": 18.85,
         "2015-05-13": 17.95,
         "2015-05-18": 17.85,
-        "2015-05-19": 18.05
+        "2015-05-19": 18.05,
+        "2015-05-20": 16.95,
+        "2015-05-21": 16.95
       },
-      "medianPrice": 18.05,
-      "medianDiscount": 0
+      "medianPrice": 17.95,
+      "medianDiscount": 6
     },
     {
       "uri": "http://www.priceminister.com/mfp/5026173/lego-the-hobbit#pid=273754559",
@@ -139,15 +151,17 @@
         "2015-05-12": 18.26,
         "2015-05-13": 20.75,
         "2015-05-18": 19.84,
-        "2015-05-19": 19.84
+        "2015-05-19": 19.84,
+        "2015-05-20": 19.84,
+        "2015-05-21": 18.84
       },
       "medianPrice": 19.84,
-      "medianDiscount": 0
+      "medianDiscount": 5
     },
     {
       "uri": "http://www.priceminister.com/mfp/5026169/lego-la-grande-aventure-le-jeu-video#pid=267572129",
       "id": 11,
-      "name": "Lego la grande aventure le jeu video",
+      "name": "Lego la grande aventure le",
       "prices": {
         "2015-05-04": 17.94,
         "2015-05-05": 18.05,
@@ -157,15 +171,17 @@
         "2015-05-12": 20.99,
         "2015-05-13": 29.95,
         "2015-05-18": 20.99,
-        "2015-05-19": 20.99
+        "2015-05-19": 20.99,
+        "2015-05-20": 20.95,
+        "2015-05-21": 20.9
       },
-      "medianPrice": 20.99,
+      "medianPrice": 20.95,
       "medianDiscount": 0
     },
     {
       "uri": "http://www.priceminister.com/mfp/2002271/lego-pirates-des-caraibes-jeu-video#pid=118306050",
       "id": 12,
-      "name": "Lego pirates des caraibes jeu video",
+      "name": "Lego pirates des caraibes",
       "prices": {
         "2015-05-04": 15.55,
         "2015-05-05": 15.55,
@@ -175,15 +191,17 @@
         "2015-05-12": 13,
         "2015-05-13": 13,
         "2015-05-18": 15.05,
-        "2015-05-19": 15.05
+        "2015-05-19": 15.05,
+        "2015-05-20": 15.95,
+        "2015-05-21": 15.95
       },
-      "medianPrice": 15.05,
-      "medianDiscount": 0
+      "medianPrice": 15.55,
+      "medianDiscount": -3
     },
     {
       "uri": "http://www.priceminister.com/mfp/2002270/lego-marvel-super-heroes-jeu-video#pid=226216500",
       "id": 13,
-      "name": "Lego marvel super heroes jeu video",
+      "name": "Lego marvel super heroes",
       "prices": {
         "2015-05-04": 22.04,
         "2015-05-05": 22.04,
@@ -193,15 +211,17 @@
         "2015-05-12": 20.95,
         "2015-05-13": 26.65,
         "2015-05-18": 19.79,
-        "2015-05-19": 19.79
+        "2015-05-19": 19.79,
+        "2015-05-20": 20.05,
+        "2015-05-21": 19.85
       },
-      "medianPrice": 21.04,
-      "medianDiscount": 6
+      "medianPrice": 20.95,
+      "medianDiscount": 5
     },
     {
       "uri": "http://www.priceminister.com/mfp/2002541/marvel-vs-capcom-3-fate-of-two-worlds-jeu-video#pid=116382792",
       "id": 14,
-      "name": "Marvel vs capcom 3 fate of two worlds jeu video",
+      "name": "Marvel vs capcom 3 fate of two worlds",
       "prices": {
         "2015-05-04": 19.55,
         "2015-05-05": 19.55,
@@ -211,15 +231,17 @@
         "2015-05-12": 17.95,
         "2015-05-13": 17.95,
         "2015-05-18": 17.05,
-        "2015-05-19": 17.05
+        "2015-05-19": 17.05,
+        "2015-05-20": 15.95,
+        "2015-05-21": 15.95
       },
       "medianPrice": 17.95,
-      "medianDiscount": 5
+      "medianDiscount": 11
     },
     {
       "uri": "http://www.priceminister.com/mfp/2003443/rayman-legends-jeu-video#pid=206756671",
       "id": 15,
-      "name": "Rayman legends jeu video",
+      "name": "Rayman legends",
       "prices": {
         "2015-05-04": 19.05,
         "2015-05-05": 19.05,
@@ -229,15 +251,17 @@
         "2015-05-12": 18.15,
         "2015-05-13": 21.99,
         "2015-05-18": 19.05,
-        "2015-05-19": 19.05
+        "2015-05-19": 19.05,
+        "2015-05-20": 18.99,
+        "2015-05-21": 18.99
       },
-      "medianPrice": 19.05,
+      "medianPrice": 18.99,
       "medianDiscount": 0
     },
     {
       "uri": "http://www.priceminister.com/mfp/2003445/rayman-origins-jeu-video#pid=132107175",
       "id": 16,
-      "name": "Rayman origins jeu video",
+      "name": "Rayman origins",
       "prices": {
         "2015-05-04": 14.55,
         "2015-05-05": 14.55,
@@ -247,7 +271,9 @@
         "2015-05-12": 14.95,
         "2015-05-13": 14.95,
         "2015-05-18": 15.35,
-        "2015-05-19": 15.35
+        "2015-05-19": 15.35,
+        "2015-05-20": 15.35,
+        "2015-05-21": 15.35
       },
       "medianPrice": 14.95,
       "medianDiscount": -3
@@ -255,7 +281,7 @@
     {
       "uri": "http://www.priceminister.com/mfp/2003445/rayman-origins-jeu-video#pid=189266954",
       "id": 17,
-      "name": "Rayman origins jeu video",
+      "name": "Rayman origins",
       "prices": {
         "2015-05-04": 12.04,
         "2015-05-05": 12.04,
@@ -265,15 +291,17 @@
         "2015-05-12": 12.05,
         "2015-05-13": 11.05,
         "2015-05-18": 12.95,
-        "2015-05-19": 12.95
+        "2015-05-19": 12.95,
+        "2015-05-20": 12.85,
+        "2015-05-21": 12.85
       },
-      "medianPrice": 12.04,
-      "medianDiscount": -8
+      "medianPrice": 12.05,
+      "medianDiscount": -7
     },
     {
       "uri": "http://www.priceminister.com/mfp/2003443/rayman-legends-jeu-video#pid=238458428",
       "id": 18,
-      "name": "Rayman legends jeu video",
+      "name": "Rayman legends",
       "prices": {
         "2015-05-04": 20.96,
         "2015-05-05": 20.96,
@@ -283,7 +311,9 @@
         "2015-05-12": 20.05,
         "2015-05-13": 20.05,
         "2015-05-18": 20.05,
-        "2015-05-19": 20.05
+        "2015-05-19": 20.05,
+        "2015-05-20": 20.05,
+        "2015-05-21": 20.05
       },
       "medianPrice": 20.05,
       "medianDiscount": 0
@@ -291,7 +321,7 @@
     {
       "uri": "http://www.priceminister.com/mfp/2003443/rayman-legends-jeu-video#pid=417846217",
       "id": 19,
-      "name": "Rayman legends jeu video",
+      "name": "Rayman legends",
       "prices": {
         "2015-05-04": 19.88,
         "2015-05-05": 19.88,
@@ -301,7 +331,9 @@
         "2015-05-12": 19.88,
         "2015-05-13": 19.88,
         "2015-05-18": 19.88,
-        "2015-05-19": 19.88
+        "2015-05-19": 19.88,
+        "2015-05-20": 19.88,
+        "2015-05-21": 19.88
       },
       "medianPrice": 19.88,
       "medianDiscount": 0
@@ -309,7 +341,7 @@
     {
       "uri": "http://www.priceminister.com/mfp/2000456/blur-jeu-video#pid=84057174",
       "id": 20,
-      "name": "Blur jeu video",
+      "name": "Blur",
       "prices": {
         "2015-05-04": 15.45,
         "2015-05-05": 15.45,
@@ -319,10 +351,12 @@
         "2015-05-12": 11.95,
         "2015-05-13": 14.05,
         "2015-05-18": 13,
-        "2015-05-19": 12.85
+        "2015-05-19": 12.85,
+        "2015-05-20": 13.65,
+        "2015-05-21": 13.65
       },
-      "medianPrice": 14.05,
-      "medianDiscount": 9
+      "medianPrice": 13.65,
+      "medianDiscount": 0
     },
     {
       "uri": "http://www.priceminister.com/offer/buy/132204982/ps3-ico-shadow-of-the-colossus.html",
@@ -337,15 +371,17 @@
         "2015-05-12": 23.05,
         "2015-05-13": 27.42,
         "2015-05-18": 24.85,
-        "2015-05-19": 24.04
+        "2015-05-19": 24.04,
+        "2015-05-20": 23.85,
+        "2015-05-21": 23.85
       },
-      "medianPrice": 27.42,
-      "medianDiscount": 12
+      "medianPrice": 24.85,
+      "medianDiscount": 4
     },
     {
       "uri": "http://www.priceminister.com/mfp/2001957/infamous-2-jeu-video#pid=181721256",
       "id": 22,
-      "name": "Infamous 2 jeu video",
+      "name": "Infamous 2",
       "prices": {
         "2015-05-04": 8.06,
         "2015-05-05": 8.06,
@@ -355,15 +391,17 @@
         "2015-05-12": 8.06,
         "2015-05-13": 8.06,
         "2015-05-18": 7.94,
-        "2015-05-19": 7.94
+        "2015-05-19": 7.94,
+        "2015-05-20": 7.05,
+        "2015-05-21": 11.04
       },
       "medianPrice": 8.06,
-      "medianDiscount": 1
+      "medianDiscount": -37
     },
     {
       "uri": "http://www.priceminister.com/mfp/2001381/far-cry-3-the-lost-expeditions-jeu-video#pid=269957733",
       "id": 23,
-      "name": "Far cry 3 the lost expeditions jeu video",
+      "name": "Far cry 3 the lost expeditions",
       "prices": {
         "2015-05-04": 13.05,
         "2015-05-05": 13.05,
@@ -373,7 +411,9 @@
         "2015-05-12": 13.85,
         "2015-05-13": 13.85,
         "2015-05-18": 13.85,
-        "2015-05-19": 13.85
+        "2015-05-19": 13.85,
+        "2015-05-20": 13.85,
+        "2015-05-21": 13.85
       },
       "medianPrice": 13.85,
       "medianDiscount": 0
@@ -381,7 +421,7 @@
     {
       "uri": "http://www.priceminister.com/mfp/2000235/assassins-creed-4-black-flag-jeu-video#pid=476461352",
       "id": 24,
-      "name": "Assassins creed 4 black flag jeu video",
+      "name": "Assassins creed 4 black flag",
       "prices": {
         "2015-05-04": 21.96,
         "2015-05-05": 21.96,
@@ -391,15 +431,17 @@
         "2015-05-12": 19.04,
         "2015-05-13": 19.04,
         "2015-05-18": 19.04,
-        "2015-05-19": 19.04
+        "2015-05-19": 19.04,
+        "2015-05-20": 19.04,
+        "2015-05-21": 19.04
       },
-      "medianPrice": 21.96,
-      "medianDiscount": 13
+      "medianPrice": 19.04,
+      "medianDiscount": 0
     },
     {
       "uri": "http://www.priceminister.com/mfp/2002260/lego-batman-2-dc-superheroes-jeu-video#pid=513096668",
       "id": 25,
-      "name": "Lego batman 2 dc superheroes jeu video",
+      "name": "Lego batman 2 dc superheroes",
       "prices": {
         "2015-05-04": 19.98,
         "2015-05-05": 19.98,
@@ -409,15 +451,17 @@
         "2015-05-12": 19.98,
         "2015-05-13": 19.98,
         "2015-05-18": 19.98,
-        "2015-05-19": 19.98
+        "2015-05-19": 19.98,
+        "2015-05-20": 19.98,
+        "2015-05-21": 19.55
       },
       "medianPrice": 19.98,
-      "medianDiscount": 0
+      "medianDiscount": 2
     },
     {
       "uri": "http://www.priceminister.com/mfp/2004327/tekken-6-jeu-video#pid=178023269",
       "id": 26,
-      "name": "Tekken 6 jeu video",
+      "name": "Tekken 6",
       "prices": {
         "2015-05-04": 18.44,
         "2015-05-05": 18.44,
@@ -427,7 +471,9 @@
         "2015-05-12": 18.44,
         "2015-05-13": 18.44,
         "2015-05-18": 18.44,
-        "2015-05-19": 18.44
+        "2015-05-19": 18.44,
+        "2015-05-20": 18.44,
+        "2015-05-21": 18.44
       },
       "medianPrice": 18.44,
       "medianDiscount": 0
@@ -435,7 +481,7 @@
     {
       "uri": "http://www.priceminister.com/mfp/2003462/red-dead-redemption-jeu-video#pid=449888278",
       "id": 27,
-      "name": "Red dead redemption jeu video",
+      "name": "Red dead redemption",
       "prices": {
         "2015-05-04": 19.99,
         "2015-05-05": 19.99,
@@ -445,7 +491,9 @@
         "2015-05-12": 19.99,
         "2015-05-13": 19.99,
         "2015-05-18": 19.99,
-        "2015-05-19": 19.99
+        "2015-05-19": 19.99,
+        "2015-05-20": 19.99,
+        "2015-05-21": 19.99
       },
       "medianPrice": 19.99,
       "medianDiscount": 0
@@ -453,7 +501,7 @@
     {
       "uri": "http://www.priceminister.com/mfp/2003485/resident-evil-5-jeu-video#pid=223026839",
       "id": 28,
-      "name": "Resident evil 5 jeu video",
+      "name": "Resident evil 5",
       "prices": {
         "2015-05-04": 19.05,
         "2015-05-05": 19.05,
@@ -463,33 +511,17 @@
         "2015-05-12": 19.05,
         "2015-05-13": 19.05,
         "2015-05-18": 19.05,
-        "2015-05-19": 19.05
+        "2015-05-19": 19.05,
+        "2015-05-20": 19.05,
+        "2015-05-21": 19.05
       },
       "medianPrice": 19.05,
       "medianDiscount": 0
     },
     {
-      "uri": "http://www.priceminister.com/mfp/2001659/god-of-war-ascension-jeu-video#pid=184973884",
-      "id": 36,
-      "name": "God of war ascension jeu video",
-      "prices": {
-        "2015-05-04": 12.08,
-        "2015-05-05": 12.08,
-        "2015-05-06": 12.05,
-        "2015-05-07": 8.95,
-        "2015-05-11": 10.84,
-        "2015-05-12": 10.84,
-        "2015-05-13": 10.84,
-        "2015-05-18": 9.16,
-        "2015-05-19": 9.16
-      },
-      "medianPrice": 12.08,
-      "medianDiscount": 24
-    },
-    {
       "uri": "http://www.priceminister.com/mfp/2001658/god-of-war-3-jeu-video#pid=92807006",
       "id": 38,
-      "name": "God of war 3 jeu video",
+      "name": "God of war 3",
       "prices": {
         "2015-05-04": 5.55,
         "2015-05-05": 5.55,
@@ -499,10 +531,12 @@
         "2015-05-12": 5.05,
         "2015-05-13": 5.55,
         "2015-05-18": 5.55,
-        "2015-05-19": 5.55
+        "2015-05-19": 5.55,
+        "2015-05-20": 5.55,
+        "2015-05-21": 5.45
       },
       "medianPrice": 5.55,
-      "medianDiscount": 0
+      "medianDiscount": 2
     },
     {
       "uri": "http://www.priceminister.com/offer/buy/162849913/god-of-war-iii-essential.html",
@@ -525,7 +559,7 @@
     {
       "uri": "http://www.priceminister.com/mfp/2004331/tekken-tag-tournament-2-jeu-video#pid=160284572",
       "id": 40,
-      "name": "Tekken tag tournament 2 jeu video",
+      "name": "Tekken tag tournament 2",
       "prices": {
         "2015-05-04": 13.04,
         "2015-05-05": 12.94,
@@ -535,7 +569,9 @@
         "2015-05-12": 13.04,
         "2015-05-13": 13.04,
         "2015-05-18": 18.05,
-        "2015-05-19": 18.05
+        "2015-05-19": 18.05,
+        "2015-05-20": 18.04,
+        "2015-05-21": 18.05
       },
       "medianPrice": 13.04,
       "medianDiscount": -38
@@ -543,7 +579,7 @@
     {
       "uri": "http://www.priceminister.com/mfp/2004327/tekken-6-jeu-video#pid=81452752",
       "id": 41,
-      "name": "Tekken 6 jeu video",
+      "name": "Tekken 6",
       "prices": {
         "2015-05-04": 14.05,
         "2015-05-05": 14.05,
@@ -553,10 +589,12 @@
         "2015-05-12": 14.45,
         "2015-05-13": 15.92,
         "2015-05-18": 15.92,
-        "2015-05-19": 15.92
+        "2015-05-19": 15.92,
+        "2015-05-20": 15.05,
+        "2015-05-21": 14.85
       },
       "medianPrice": 14.45,
-      "medianDiscount": -10
+      "medianDiscount": -3
     },
     {
       "uri": "http://www.priceminister.com/offer/buy/116078703/tekken-6-edition-plainum-jeu-ps3.html",
@@ -571,7 +609,9 @@
         "2015-05-12": 15.05,
         "2015-05-13": 15.05,
         "2015-05-18": 14.95,
-        "2015-05-19": 14.95
+        "2015-05-19": 14.95,
+        "2015-05-20": 14.95,
+        "2015-05-21": 14.95
       },
       "medianPrice": 15.05,
       "medianDiscount": 1
@@ -579,7 +619,7 @@
     {
       "uri": "http://www.priceminister.com/mfp/2000925/dead-or-alive-5-jeu-video#pid=160284571",
       "id": 43,
-      "name": "Dead or alive 5 jeu video",
+      "name": "Dead or alive 5",
       "prices": {
         "2015-05-04": 14.05,
         "2015-05-05": 12.95,
@@ -589,10 +629,12 @@
         "2015-05-12": 12.95,
         "2015-05-13": 12.95,
         "2015-05-18": 12.8,
-        "2015-05-19": 12.8
+        "2015-05-19": 12.8,
+        "2015-05-20": 12.65,
+        "2015-05-21": 12.25
       },
       "medianPrice": 12.95,
-      "medianDiscount": 1
+      "medianDiscount": 5
     },
     {
       "uri": "http://www.priceminister.com/offer/buy/84057176/wipeout-hd-jeu-ps3.html",
@@ -607,7 +649,9 @@
         "2015-05-12": 29.95,
         "2015-05-13": 29.95,
         "2015-05-18": 29.95,
-        "2015-05-19": 29.95
+        "2015-05-19": 29.95,
+        "2015-05-20": 29.95,
+        "2015-05-21": 29.95
       },
       "medianPrice": 29.95,
       "medianDiscount": 0
@@ -651,7 +695,7 @@
     {
       "uri": "http://www.priceminister.com/mfp/2003493/resident-evil-revelations-jeu-video#pid=194061341",
       "id": 48,
-      "name": "Resident evil revelations jeu video",
+      "name": "Resident evil revelations",
       "prices": {
         "2015-05-04": 19.44,
         "2015-05-05": 19.44,
@@ -661,15 +705,17 @@
         "2015-05-12": 16.58,
         "2015-05-13": 16.15,
         "2015-05-18": 14.75,
-        "2015-05-19": 14.65
+        "2015-05-19": 14.65,
+        "2015-05-20": 14.65,
+        "2015-05-21": 14.75
       },
-      "medianPrice": 16.58,
-      "medianDiscount": 12
+      "medianPrice": 16.45,
+      "medianDiscount": 10
     },
     {
       "uri": "http://www.priceminister.com/mfp/2003485/resident-evil-5-jeu-video#pid=92351329",
       "id": 49,
-      "name": "Resident evil 5 jeu video",
+      "name": "Resident evil 5",
       "prices": {
         "2015-05-04": 10.05,
         "2015-05-05": 10.05,
@@ -679,7 +725,9 @@
         "2015-05-12": 10.05,
         "2015-05-13": 10.05,
         "2015-05-18": 10.05,
-        "2015-05-19": 10.05
+        "2015-05-19": 10.05,
+        "2015-05-20": 10.05,
+        "2015-05-21": 10.05
       },
       "medianPrice": 10.05,
       "medianDiscount": 0
@@ -687,7 +735,7 @@
     {
       "uri": "http://www.priceminister.com/mfp/2003485/resident-evil-5-jeu-video#pid=76257771",
       "id": 50,
-      "name": "Resident evil 5 jeu video",
+      "name": "Resident evil 5",
       "prices": {
         "2015-05-04": 4.85,
         "2015-05-05": 4.85,
@@ -697,7 +745,9 @@
         "2015-05-12": 4.85,
         "2015-05-13": 10.05,
         "2015-05-18": 4.85,
-        "2015-05-19": 6.04
+        "2015-05-19": 6.04,
+        "2015-05-20": 6.04,
+        "2015-05-21": 6.04
       },
       "medianPrice": 4.85,
       "medianDiscount": -25
@@ -705,7 +755,7 @@
     {
       "uri": "http://www.priceminister.com/mfp/2003485/resident-evil-5-jeu-video#pid=166546957",
       "id": 51,
-      "name": "Resident evil 5 jeu video",
+      "name": "Resident evil 5",
       "prices": {
         "2015-05-04": 6.2,
         "2015-05-05": 5.09,
@@ -715,7 +765,9 @@
         "2015-05-12": 5.09,
         "2015-05-13": 5.09,
         "2015-05-18": 5.09,
-        "2015-05-19": 5.09
+        "2015-05-19": 5.09,
+        "2015-05-20": 5.09,
+        "2015-05-21": 5.09
       },
       "medianPrice": 5.09,
       "medianDiscount": 0
@@ -723,7 +775,7 @@
     {
       "uri": "http://www.priceminister.com/mfp/2003485/resident-evil-5-jeu-video#pid=223026839",
       "id": 52,
-      "name": "Resident evil 5 jeu video",
+      "name": "Resident evil 5",
       "prices": {
         "2015-05-04": 19.05,
         "2015-05-05": 19.05,
@@ -733,7 +785,9 @@
         "2015-05-12": 19.05,
         "2015-05-13": 19.05,
         "2015-05-18": 19.05,
-        "2015-05-19": 19.05
+        "2015-05-19": 19.05,
+        "2015-05-20": 19.05,
+        "2015-05-21": 19.05
       },
       "medianPrice": 19.05,
       "medianDiscount": 0
@@ -741,7 +795,7 @@
     {
       "uri": "http://www.priceminister.com/mfp/2000927/dead-or-alive-5-ultimate-jeu-video#pid=228100655",
       "id": 53,
-      "name": "Dead or alive 5 ultimate jeu video",
+      "name": "Dead or alive 5 ultimate",
       "prices": {
         "2015-05-04": 19.75,
         "2015-05-05": 19.75,
@@ -751,7 +805,9 @@
         "2015-05-12": 19.75,
         "2015-05-13": 19.75,
         "2015-05-18": 18.95,
-        "2015-05-19": 18.95
+        "2015-05-19": 18.95,
+        "2015-05-20": 18.95,
+        "2015-05-21": 18.95
       },
       "medianPrice": 19.75,
       "medianDiscount": 4
@@ -759,7 +815,7 @@
     {
       "uri": "http://www.priceminister.com/mfp/2002132/killzone-3-jeu-video#pid=114239536",
       "id": 54,
-      "name": "Killzone 3 jeu video",
+      "name": "Killzone 3",
       "prices": {
         "2015-05-04": 5.04,
         "2015-05-05": 5.04,
@@ -769,7 +825,9 @@
         "2015-05-12": 5.04,
         "2015-05-13": 5.04,
         "2015-05-18": 5.64,
-        "2015-05-19": 6.05
+        "2015-05-19": 6.05,
+        "2015-05-20": 6.05,
+        "2015-05-21": 6.05
       },
       "medianPrice": 5.04,
       "medianDiscount": -20
@@ -777,7 +835,7 @@
     {
       "uri": "http://www.priceminister.com/mfp/2002132/killzone-3-jeu-video#pid=117681263",
       "id": 55,
-      "name": "Killzone 3 jeu video",
+      "name": "Killzone 3",
       "prices": {
         "2015-05-04": 7.74,
         "2015-05-05": 7.74,
@@ -787,7 +845,9 @@
         "2015-05-12": 7.74,
         "2015-05-13": 7.74,
         "2015-05-18": 7.74,
-        "2015-05-19": 7.74
+        "2015-05-19": 7.74,
+        "2015-05-20": 7.74,
+        "2015-05-21": 7.74
       },
       "medianPrice": 7.74,
       "medianDiscount": 0
@@ -795,7 +855,7 @@
     {
       "uri": "http://www.priceminister.com/mfp/2002131/killzone-2-jeu-video#pid=75381574",
       "id": 56,
-      "name": "Killzone 2 jeu video",
+      "name": "Killzone 2",
       "prices": {
         "2015-05-04": 3.95,
         "2015-05-05": 3.95,
@@ -805,7 +865,9 @@
         "2015-05-12": 3.95,
         "2015-05-13": 6.05,
         "2015-05-18": 3.95,
-        "2015-05-19": 3.95
+        "2015-05-19": 3.95,
+        "2015-05-20": 3.95,
+        "2015-05-21": 3.95
       },
       "medianPrice": 3.95,
       "medianDiscount": 0
@@ -813,7 +875,7 @@
     {
       "uri": "http://www.priceminister.com/mfp/2002132/killzone-3-jeu-video#pid=133025394",
       "id": 57,
-      "name": "Killzone 3 jeu video",
+      "name": "Killzone 3",
       "prices": {
         "2015-05-04": 5.69,
         "2015-05-05": 5.69,
@@ -823,7 +885,9 @@
         "2015-05-12": 5.69,
         "2015-05-13": 5.69,
         "2015-05-18": 5.9,
-        "2015-05-19": 5.9
+        "2015-05-19": 5.9,
+        "2015-05-20": 5.9,
+        "2015-05-21": 5.9
       },
       "medianPrice": 5.69,
       "medianDiscount": -4
@@ -831,7 +895,7 @@
     {
       "uri": "http://www.priceminister.com/mfp/2002132/killzone-3-jeu-video#pid=124671411",
       "id": 58,
-      "name": "Killzone 3 jeu video",
+      "name": "Killzone 3",
       "prices": {
         "2015-05-04": 7.45,
         "2015-05-05": 7.45,
@@ -841,7 +905,9 @@
         "2015-05-12": 7.45,
         "2015-05-13": 7.45,
         "2015-05-18": 7.45,
-        "2015-05-19": 7.45
+        "2015-05-19": 7.45,
+        "2015-05-20": 7.45,
+        "2015-05-21": 7.45
       },
       "medianPrice": 7.45,
       "medianDiscount": 0
@@ -849,7 +915,7 @@
     {
       "uri": "http://www.priceminister.com/mfp/2002132/killzone-3-jeu-video#pid=191003150",
       "id": 60,
-      "name": "Killzone 3 jeu video",
+      "name": "Killzone 3",
       "prices": {
         "2015-05-04": 7.22,
         "2015-05-05": 7.22,
@@ -859,7 +925,9 @@
         "2015-05-12": 7.22,
         "2015-05-13": 7.22,
         "2015-05-18": 7.22,
-        "2015-05-19": 7.22
+        "2015-05-19": 7.22,
+        "2015-05-20": 7.22,
+        "2015-05-21": 7.22
       },
       "medianPrice": 7.22,
       "medianDiscount": 0
@@ -867,7 +935,7 @@
     {
       "uri": "http://www.priceminister.com/mfp/2002693/mirror-s-edge-jeu-video#pid=71670799",
       "id": 61,
-      "name": "Mirror s edge jeu video",
+      "name": "Mirror s edge",
       "prices": {
         "2015-05-04": 4.55,
         "2015-05-05": 4.55,
@@ -877,7 +945,9 @@
         "2015-05-12": 7.15,
         "2015-05-13": 7.15,
         "2015-05-18": 7.33,
-        "2015-05-19": 7.33
+        "2015-05-19": 7.33,
+        "2015-05-20": 7.33,
+        "2015-05-21": 7.33
       },
       "medianPrice": 7.15,
       "medianDiscount": -3
@@ -885,7 +955,7 @@
     {
       "uri": "http://www.priceminister.com/mfp/2003462/red-dead-redemption-jeu-video#pid=91084162",
       "id": 62,
-      "name": "Red dead redemption jeu video",
+      "name": "Red dead redemption",
       "prices": {
         "2015-05-04": 8.36,
         "2015-05-05": 8.36,
@@ -895,15 +965,17 @@
         "2015-05-12": 9.04,
         "2015-05-13": 20.9,
         "2015-05-18": 7.95,
-        "2015-05-19": 9.15
+        "2015-05-19": 9.15,
+        "2015-05-20": 9.15,
+        "2015-05-21": 8.05
       },
       "medianPrice": 8.36,
-      "medianDiscount": -9
+      "medianDiscount": 4
     },
     {
       "uri": "http://www.priceminister.com/mfp/2003462/red-dead-redemption-jeu-video#pid=106490535",
       "id": 63,
-      "name": "Red dead redemption jeu video",
+      "name": "Red dead redemption",
       "prices": {
         "2015-05-04": 9.75,
         "2015-05-05": 9.75,
@@ -913,7 +985,9 @@
         "2015-05-12": 9.75,
         "2015-05-13": 20.9,
         "2015-05-18": 9.75,
-        "2015-05-19": 9.75
+        "2015-05-19": 9.75,
+        "2015-05-20": 9.75,
+        "2015-05-21": 9.75
       },
       "medianPrice": 9.75,
       "medianDiscount": 0
@@ -921,7 +995,7 @@
     {
       "uri": "http://www.priceminister.com/mfp/2003462/red-dead-redemption-jeu-video#pid=104969397",
       "id": 64,
-      "name": "Red dead redemption jeu video",
+      "name": "Red dead redemption",
       "prices": {
         "2015-05-04": 9.55,
         "2015-05-05": 9.55,
@@ -931,20 +1005,24 @@
         "2015-05-12": 10.55,
         "2015-05-13": 10.55,
         "2015-05-18": 10.55,
-        "2015-05-19": 10.55
+        "2015-05-19": 10.55,
+        "2015-05-20": 10.55,
+        "2015-05-21": 11.55
       },
       "medianPrice": 10.55,
-      "medianDiscount": 0
+      "medianDiscount": -9
     },
     {
       "uri": "http://www.priceminister.com/mfp/2000550/buzz-quiz-world-jeu-video#pid=82088947",
       "id": 65,
-      "name": "Buzz quiz world jeu video",
+      "name": "Buzz quiz world",
       "prices": {
         "2015-05-12": 20.45,
         "2015-05-13": 18.79,
         "2015-05-18": 20.05,
-        "2015-05-19": 20.05
+        "2015-05-19": 20.05,
+        "2015-05-20": 20.05,
+        "2015-05-21": 20.05
       },
       "medianPrice": 20.05,
       "medianDiscount": 0
@@ -965,12 +1043,14 @@
     {
       "uri": "http://www.priceminister.com/mfp/2000549/buzz-le-meilleur-des-francais-jeu-video#pid=76158151",
       "id": 67,
-      "name": "Buzz le meilleur des francais jeu video",
+      "name": "Buzz le meilleur des francais",
       "prices": {
         "2015-05-12": 31.85,
         "2015-05-13": 31.85,
         "2015-05-18": 31.85,
-        "2015-05-19": 31.85
+        "2015-05-19": 31.85,
+        "2015-05-20": 31.85,
+        "2015-05-21": 31.85
       },
       "medianPrice": 31.85,
       "medianDiscount": 0
@@ -983,7 +1063,9 @@
         "2015-05-12": 15.05,
         "2015-05-13": 15.05,
         "2015-05-18": 15.08,
-        "2015-05-19": 15.08
+        "2015-05-19": 15.08,
+        "2015-05-20": 15.08,
+        "2015-05-21": 15.08
       },
       "medianPrice": 15.08,
       "medianDiscount": 0
@@ -996,7 +1078,9 @@
         "2015-05-12": 50.15,
         "2015-05-13": 50.15,
         "2015-05-18": 50.15,
-        "2015-05-19": 50.15
+        "2015-05-19": 50.15,
+        "2015-05-20": 50.15,
+        "2015-05-21": 50.15
       },
       "medianPrice": 50.15,
       "medianDiscount": 0
@@ -1004,10 +1088,12 @@
     {
       "uri": "http://www.priceminister.com/mfp/2000927/dead-or-alive-5-ultimate-jeu-video#pid=221012656",
       "id": 70,
-      "name": "Dead or alive 5 ultimate jeu video",
+      "name": "Dead or alive 5 ultimate",
       "prices": {
         "2015-05-18": 26.55,
-        "2015-05-19": 26.55
+        "2015-05-19": 26.55,
+        "2015-05-20": 26.55,
+        "2015-05-21": 26.55
       },
       "medianPrice": 26.55,
       "medianDiscount": 0
@@ -1017,40 +1103,24 @@
       "id": 71,
       "name": "God of war iii essential",
       "prices": {
-        "2015-05-19": 11.16
+        "2015-05-19": 11.16,
+        "2015-05-20": 11.16,
+        "2015-05-21": 11.16
       },
       "medianPrice": 11.16,
       "medianDiscount": 0
     },
     {
-      "uri": "http://www.priceminister.com/mfp/5026211/call-of-duty-advanced-warfare#pid=299520660",
-      "id": 72,
-      "name": "Call of duty advanced warfare",
-      "prices": {
-        "2015-05-19": 28.05
-      },
-      "medianPrice": 28.05,
-      "medianDiscount": 0
-    },
-    {
       "uri": "http://www.priceminister.com/mfp/2000578/call-of-duty-black-ops-2-jeu-video#pid=158341879",
       "id": 73,
-      "name": "Call of duty black ops 2 jeu video",
+      "name": "Call of duty black ops 2",
       "prices": {
-        "2015-05-19": 14.5
+        "2015-05-19": 14.5,
+        "2015-05-20": 14.54,
+        "2015-05-21": 14.05
       },
       "medianPrice": 14.5,
-      "medianDiscount": 0
-    },
-    {
-      "uri": "http://www.priceminister.com/mfp/5026231/destiny#pid=215342000",
-      "id": 76,
-      "name": "Destiny",
-      "prices": {
-        "2015-05-19": 29.98
-      },
-      "medianPrice": 29.98,
-      "medianDiscount": 0
+      "medianDiscount": 3
     }
   ],
   "styles": [],

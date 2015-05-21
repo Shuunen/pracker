@@ -53,6 +53,7 @@ var checkNext = function (products, i) {
         }
 
         // if no product name or if name changed
+        data.name = cleanProductName(data.name);
         if (!product.name || (product.name && product.name !== data.name)) {
             product.name = data.name;
         }
@@ -96,6 +97,13 @@ var checkNext = function (products, i) {
         // check next product
         checkNext(products, ++i);
     });
+
+};
+var cleanProductName = function (str) {
+
+    str = str.replace(' jeu video', '');
+
+    return str;
 
 };
 

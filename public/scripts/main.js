@@ -66,7 +66,8 @@ function initDatatable() {
                 "type": 'chart',
                 "render": function (data, type, row) {
                     var lastPrices = getLastNPrices(row, 10);
-                    return sparkline(lastPrices);
+                    // return sparkline(lastPrices);
+                    return '<span class="col-sm-12 sparkline-chart">' + lastPrices.toString() + '</span>';
                 },
                 "targets": 3
             },
@@ -78,10 +79,17 @@ function initDatatable() {
                 },
                 "targets": 4
             }
-        ]
+        ],
+        "fnDrawCallback": drawCallback
     });
 
 }
+/*
+ * Callback executed after DT render
+ */
+var drawCallback = function () {
+    $('.sparkline-chart').not('.rendered').addClass('rendered').sparkline('html', {type: 'bar', barColor: 'cadetblue'});
+};
 
 /*
  * Return an array of the last n prices
