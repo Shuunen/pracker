@@ -65,7 +65,7 @@ function initDatatable() {
             {
                 "type": 'chart',
                 "render": function (data, type, row) {
-                    var lastPrices = getLastNPrices(row, 10);
+                    var lastPrices = getLastNPrices(row, 15);
                     // return sparkline(lastPrices);
                     return '<span class="col-sm-12 sparkline-chart">' + lastPrices.toString() + '</span>';
                 },

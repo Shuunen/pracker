@@ -24,6 +24,7 @@
     "bootstrap": "~3.3.4",
     "datatables-bootstrap3": "*",
     "hint.css": "~1.3.4",
-    "smoke": "~2.1.5"
+    "smoke": "~2.1.5",
+    "relayfoods-jquery.sparkline": "~2.1.4"
   }
 }

@@ -110,7 +110,10 @@ body {
   color: chocolate;
   font-weight: bold;
 }
-
+.sparkline-chart {
+  position: relative;
+  bottom: -3px;
+}
 table.table {
   th {
     position: relative;
