@@ -84,9 +84,9 @@ var checkNext = function (products, i) {
         }
 
         // if the median discount is nice
-        if (medianDiscount > 30) {
+        if (medianDiscount > 40) {
             log('great discount : ' + medianDiscount + '% off !', data.name);
-        } else if (medianDiscount > 20) {
+        } else if (medianDiscount > 30) {
             log('nice discount : ' + medianDiscount + '% off', data.name);
         }
 

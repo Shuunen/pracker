@@ -57,7 +57,7 @@ function initDatatable() {
             }, {
                 "type": 'discount',
                 "render": function (data, type, row) {
-                    var niceDiscountClass = (row['medianDiscount'] > 20) ? 'nice-discount' : '';
+                    var niceDiscountClass = (row['medianDiscount'] > 30) ? 'nice-discount' : '';
                     return '<span class="col-sm-12 text-right ' + niceDiscountClass + '" title="median price : ' + formatMoney(row['medianPrice']) + '">' + row['medianDiscount'] + '&nbsp;%</span>';
                 },
                 "targets": 2
