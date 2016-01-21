@@ -27,6 +27,7 @@ var notifierOptions = {
 var PriceFinder = require("price-finder");
 var priceFinder = new PriceFinder();
 var checkPrices = function (data) {
+    data = data || {name:'NONAME'};
     log('job ' + data.name + ' started');
     var products = db('products').value();
     checkNext(products);
